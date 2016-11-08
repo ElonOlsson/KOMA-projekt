@@ -1,8 +1,54 @@
-<div>
-	Det här är ditt humör!
-	<form>
-		Kön:
-		<input type="radio" name="gender" value="male">
-		<input type="radio" name="gender" value="male">
+<div class="container">
+	<p>Det här är ditt humör!</p>
+	<form name="moodForm">
+		<div class="form-group" id="gender">
+			Kön:
+			<input type="radio" value="gender" value="male" /> Male 
+			<input type="radio" value="gender" value="female" /> Female <br/><br/>
+		</div>
+		<div class="form-group" id="currentMood">
+			Hur mår du idag? <br/>
+			<input type="radio" value="currentMood" value="happy"> Happy
+			<input type="radio" value="currentMood" value="neutral"> Neutral 
+			<input type="radio" value="currentMood" value="sad"> Sad <br/><br/>
+		</div>
+		<div class="form-group" id="chooseStyle">
+			Välj stil: <br/>
+			<select>
+				<option value="homeclothes">Mys</option>
+				<option value="party">Fest</option>
+				<option value="hiphop">Hiphop</option>
+			</select>
+			<br/><br/>
+		</div>
+		<div class="form-group">
+			Dagens prognos <br/>
+			<p>Massa prognoser</p>
+		</div>
+		<input type="submit" value="klar">
 	</form>
 </div>
+
+<!-- AngularJS - funkar ej än
+<div ng-app="myApp.mood" ng-controller="FromCtrl">
+	<p>Det här är ditt humör!</p>
+	<form name="moodForm" ng-submit="submit()">
+		Kön:
+		<input type="radio" ng-model="form.gender" value="male" /> Male 
+		<input type="radio" ng-model="form.gender" value="female" /> Female <br/><br/>
+		Hur mår du idag? <br/>
+		<input type="radio" ng-model="form.currentMood" value="happy"> Happy
+		<input type="radio" ng-model="form.currentMood" value="neutral"> Neutral 
+		<input type="radio" ng-model="form.currentMood" value="sad"> Sad <br/><br/>
+		Välj stil: <br/>
+		<select ng-model="form.style">
+			<option value="homeclothes">Mys</option>
+			<option value="party">Fest</option>
+			<option value="hiphop">Hiphop</option>
+		</select>
+		<br/><br/>
+		Dagens prognos <br/>
+		<p>Massa prognoser</p>
+		<input type="submit" ngClick="Submit" value="klar">
+	</form>
+</div> -->

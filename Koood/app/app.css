@@ -27,3 +27,12 @@
   content: "";
   padding: 0;
 }
+
+.logo {
+  height: 40px;
+  width: 65px;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
