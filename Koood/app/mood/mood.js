@@ -2,16 +2,17 @@
 
 var mood = angular.module('myApp.mood', ['ngRoute'])
 
-/*mood.controller('FormCtrl', function($scope) {
+mood.controller('FormCtrl', function($scope) {
 	$scope.data = {
 		gender: "default",
 		currentMood: "default",
 		style: "default"
 	};
-	$scope.submitForm = funciton() {
-
+	console.log($scope.data);
+	$scope.submitForm = function() {
+		console.log($scope.data);
 	}
-});*/
+});
 
 mood.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/mood', {

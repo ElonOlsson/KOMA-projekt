@@ -1,4 +1,28 @@
-<div class="container">
+<!-- AngularJS -->
+<div ng-app="myApp.mood" ng-controller="FormCtrl">
+	<p>Det här är ditt humör!</p>
+	<form name="moodForm" ng-submit="submitForm()">
+		Kön:
+		<input type="radio" ng-model="data.gender" value="male" /> Male 
+		<input type="radio" ng-model="data.gender" value="female" /> Female <br/><br/>
+		Hur mår du idag? <br/>
+		<input type="radio" ng-model="data.currentMood" value="happy"> Happy
+		<input type="radio" ng-model="data.currentMood" value="neutral"> Neutral 
+		<input type="radio" ng-model="data.currentMood" value="sad"> Sad <br/><br/>
+		Välj stil: <br/>
+		<select ng-model="data.style">
+			<option value="homeclothes">Mys</option>
+			<option value="party">Fest</option>
+			<option value="hiphop">Hiphop</option>
+		</select>
+		<br/><br/>
+		Dagens prognos <br/>
+		<p>Massa prognoser</p>
+		<input type="submit" ngClick="submitForm">
+	</form>
+</div>
+
+<!-- <div class="container">
 	<p>Det här är ditt humör!</p>
 	<form name="moodForm">
 		<div class="form-group" id="gender">
@@ -28,27 +52,4 @@
 		<input type="submit" value="klar">
 	</form>
 </div>
-
-<!-- AngularJS - funkar ej än
-<div ng-app="myApp.mood" ng-controller="FromCtrl">
-	<p>Det här är ditt humör!</p>
-	<form name="moodForm" ng-submit="submit()">
-		Kön:
-		<input type="radio" ng-model="form.gender" value="male" /> Male 
-		<input type="radio" ng-model="form.gender" value="female" /> Female <br/><br/>
-		Hur mår du idag? <br/>
-		<input type="radio" ng-model="form.currentMood" value="happy"> Happy
-		<input type="radio" ng-model="form.currentMood" value="neutral"> Neutral 
-		<input type="radio" ng-model="form.currentMood" value="sad"> Sad <br/><br/>
-		Välj stil: <br/>
-		<select ng-model="form.style">
-			<option value="homeclothes">Mys</option>
-			<option value="party">Fest</option>
-			<option value="hiphop">Hiphop</option>
-		</select>
-		<br/><br/>
-		Dagens prognos <br/>
-		<p>Massa prognoser</p>
-		<input type="submit" ngClick="Submit" value="klar">
-	</form>
-</div> -->
+ -->
