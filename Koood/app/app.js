@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.mood'//<--- Här lägger ni till era moduler se home.js
+  'myApp.mood' //<--- Här lägger ni till era moduler se home.js
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
