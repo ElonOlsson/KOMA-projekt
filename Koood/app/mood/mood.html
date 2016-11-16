@@ -1,14 +1,40 @@
 <!-- AngularJS -->
 <div class="visible-xs" ng-app="myApp.mood" ng-controller="FormCtrl">
-	<p>Det här är ditt humör!</p>
+	<p>Let's go!</p>
 	<form name="moodForm" ng-submit="submitForm()">
-		Kön:
-		<input type="radio" ng-model="data.gender" value="male" /> Male 
-		<input type="radio" ng-model="data.gender" value="female" /> Female <br/><br/>
+		Kön?
+        <div>
+            <label>
+                <img src="../Koood/app/images/Male.png" height="30" width="30"/>
+                <input type="radio" ng-model="data.gender" value="male" />
+            </label>
+            <label>
+                <img src="../Koood/app/images/Female.png" height="30" width="30"/>
+                <input type="radio" ng-model="data.gender" value="female" />
+            </label>
+        </div>
+        <br/>
+
+            <div>
 		Hur mår du idag? <br/>
-		<input type="radio" ng-model="data.currentMood" value="happy"> Happy
-		<input type="radio" ng-model="data.currentMood" value="neutral"> Neutral 
-		<input type="radio" ng-model="data.currentMood" value="sad"> Sad <br/><br/>
+
+        <div>
+		<label>
+		<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+		<input type="radio" ng-model="data.currentMood" value="happy">
+        </label>
+
+		<label>
+		<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
+		<input type="radio" ng-model="data.currentMood" value="neutral">
+        </label>
+
+		<label>
+		<img src="../Koood/app/images/sad.png" height="30" width="30"/>
+		<input type="radio" ng-model="data.currentMood" value="sad">
+        </div>
+                <br/>
+<div>
 		Välj stil: <br/>
 		<select ng-model="data.style">
 			<option value="Goth">Mys</option>
@@ -16,6 +42,8 @@
 			<option value="Hiphop">Hiphop</option>
 		</select>
 		<br/><br/>
+		</div>
+
 		Dagens prognos <br/>
 		<p>Massa prognoser</p>
 		<input type="submit" ngClick="submitForm">
