@@ -4,10 +4,11 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.mood' //<--- Här lägger ni till era moduler se home.js
+  'myApp.mood',
+  'myApp.start' //<--- Här lägger ni till era moduler se home.js
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/home'}); //<--- Här skriver ni er startsida
+  $routeProvider.otherwise({redirectTo: '/Start'}); //<--- Här skriver ni er startsida
 }]);
