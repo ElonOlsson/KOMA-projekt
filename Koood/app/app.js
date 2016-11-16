@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
+  'myApp.home.carousel',
   'myApp.mood' //<--- Här lägger ni till era moduler se home.js
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
