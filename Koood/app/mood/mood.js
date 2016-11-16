@@ -19,4 +19,5 @@ mood.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'app/mood/mood.html',
     controller: ''  //<--- här lägger ni er controller om ni vill ha någon
   });
+
 }])

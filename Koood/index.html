@@ -11,7 +11,6 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" />
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" />
    -->
-
   <link rel="stylesheet" href="app/app.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -19,19 +18,23 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">
+        <a class=navbar-brand" href="#">
         <img class="logo" src="app/images/logo-watercolour.png" alt="Klädkris" style="float:left";></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuButton">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#!/mood">Humör</a></li>
-          <li><a href="#!/favorties">Favoriter</a></li>
+      <div id="menuButton" class= "navbar-collapse collapse">
+        <ul class= "nav navbar-nav">
+          <li><a href="#!/mood" data-toggle="collapse" data-target=".navbar-collapse">
+            <img src="app/images/Circle-icons-cloud.png" height="20" width="20"/> Humör</a></li>
+          <li><a href="#!/favorties" data-toggle="collapse" data-target=".navbar-collapse">
+            <img src="app/images/Circle-icons-heart.png" height="20" width="20"/> Favoriter</a></li>
+          <li><a href="#!/outfits" data-toggle="collapse" data-target=".navbar-collapse">
+            <img src="app/images/clothes.png" height="21,08" width="20,78"/> Outfits</a></li>
         </ul>
       </div>
     </div>
@@ -46,13 +49,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
+
   <!-- end -->
 
   <!-- angular modules -->
   <script src="app/app.js"></script>
   <script src="app/home/home.js"></script>
   <script src="app/mood/mood.js"></script>
+<<<<<<< HEAD
   <script src="app/start/Start.js"></script>
+=======
+  <script src="app/outfits/outfits.js"></script>
+>>>>>>> 36cd730b9536c520d5343e7a140c72302b2e68d6
   <!-- <script src="app/favorites/favorties.js"></script> -->
 
   <!-- end -->
