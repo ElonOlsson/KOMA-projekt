@@ -19,31 +19,42 @@
 		Hur mår du idag? <br/>
 
         <div>
-		<label>
-		<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
-		<input type="radio" ng-model="data.currentMood" value="happy">
-        </label>
+			<label>
+			<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+			<input type="radio" ng-model="data.currentMood" value="happy">
+			</label>
 
-		<label>
-		<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
-		<input type="radio" ng-model="data.currentMood" value="neutral">
-        </label>
+			<label>
+			<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
+			<input type="radio" ng-model="data.currentMood" value="neutral">
+			</label>
 
-		<label>
-		<img src="../Koood/app/images/sad.png" height="30" width="30"/>
-		<input type="radio" ng-model="data.currentMood" value="sad">
+			<label>
+			<img src="../Koood/app/images/sad.png" height="30" width="30"/>
+			<input type="radio" ng-model="data.currentMood" value="sad">
         </div>
-                <br/>
-<div>
+				<br/>
+
+		<div>
 		Välj stil: <br/>
 		<select ng-model="data.style">
 			<option value="Goth">Mys</option>
 			<option value="Fancy">Fest</option>
 			<option value="Hiphop">Hiphop</option>
 		</select>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#chooseStyle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span>Välj stil</span>
+			<span class="icon-bar"></span>
+		</button>
 		<br/><br/>
 		</div>
-
+		<div id="chooseStyle" class="navbar-collapse collapse">
+			<option value="Goth">Mys</option>
+			<option value="Fancy">Fest</option>
+			<option value="Hiphop">Hiphop</option>
+		</div>
 		Dagens prognos <br/>
 		<p>Massa prognoser</p>
 		<input type="submit" ngClick="submitForm">
