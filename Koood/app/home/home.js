@@ -2,6 +2,19 @@
 
 var home = angular.module('myApp.home', ['ui.bootstrap', 'ngRoute'])
 
+var carousel = angular.module('myApp.home.carousel', []);
+carousel.controller('CarouselCtrl', CarouselCtrl);
+
+function CarouselCtrl($scope, $http){
+    $http.get('app/data/items.json')
+        .then(function(response) {
+            $scope.items = response.data;
+        }, function(response) {
+            $scope.items = "Somethig went wrong";
+        });
+    $scope.myInterval = 3000;
+};
+
 /*home.controller('popoverCtrl', function($scope) {
   $scope.showPopover = function() {
     $scope.popoverIsVisible = true;
@@ -29,12 +42,6 @@ home.config(['$routeProvider', function($routeProvider) {
 }])
 
 /*
- .weather-icon {
- height: 50px;
- width: 50px;
- }
-
-
 home.controller('CarouselCtrl', CarouselCtrl);
 
 function CarouselCtrl($scope){
