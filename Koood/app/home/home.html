@@ -13,46 +13,28 @@
 	<div class="outfits col-xs-12">
 		<div class=""outfit-top  ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
-			<div ng-controller="CarouselCtrl" id="slides_control">
+			<div ng-controller="CarouselCtrl" id="slides_control_top">
 				<div>
 					<uib-carousel interval="myInterval" active="activeSlide">
-						<uib-slide ng-repeat="item in items" index="$index">
-							<img ng-src="{{item.imgSrc}}" style="margin:auto;">
+						<uib-slide ng-repeat="item_top in items_top" index="$index">
+							<img ng-src="{{item_top.imgSrc}}" style="margin:auto;">
 						</uib-slide>
 					</uib-carousel>
 				</div>
 			</div>
 		<br />
 		</div>
-		<div class=""outfit-bottom>
-			<!--<div id="Carousel-2" class="carousel slide">
-				<ol class="carousel-indicators">
-					<li data-target="Carousel" data-slide-to="0" class="active"></li>
-					<li data-target="Carousel" data-slide-to="1"></li>
-					<li data-target="Carousel" data-slide-to="2"></li>
-					<li data-target="Carousel" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="http://lorempixel.com/400/200/food" class="img-responsive">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/400/200/" class="img-responsive">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/400/200/sports" class="img-responsive">
-					</div>
-					<div class="item">
-						<img src="http://lorempixel.com/400/200/people" class="img-responsive">
-					</div>
+		<div class=""outfit-bottom ng-app="myApp.home.carousel">
+			<!-- AngularJS - karousell -->
+			<div ng-controller="CarouselCtrl" id="slides_control_bottom">
+				<div>
+					<uib-carousel interval="myInterval" active="activeSlide">
+						<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
+							<img ng-src="{{item_bottom.imgSrc}}" style="margin:auto;">
+						</uib-slide>
+					</uib-carousel>
 				</div>
-				<span class="left carousel-control" data-target="#Carousel-2" data-slide="prev">
-    				<span class="glyphicon glyphicon-chevron-left"></span>
-				</span>
-				<span class="right carousel-control" data-target="#Carousel-2" data-slide="next">
-				   <span class="glyphicon glyphicon-chevron-right"></span>
-				</span>
-			</div>-->
+			</div>
 		</div>
 	</div>
 </div>
