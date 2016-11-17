@@ -18,7 +18,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 =======
   'myApp.start',
   'myApp.home.carousel',
-  'myApp.outfits' 
+  'myApp.outfits'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
