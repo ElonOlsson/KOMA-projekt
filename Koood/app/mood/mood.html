@@ -3,44 +3,66 @@
 	<p>Let's go!</p>
 	<form name="moodForm" ng-submit="submitForm()">
 		Kön?
-        <div>
+        <div class="row">
             <label>
                 <img src="../Koood/app/images/Male.png" height="30" width="30"/>
                 <input type="radio" ng-model="data.gender" value="male" />
             </label>
-			<label>
+			 <label>
 				<img src="../Koood/app/images/Female.png" height="30" width="30"/>
 				<input type="radio" ng-model="data.gender" value="female" />
-			</label>
+			 </label>
         </div>
         <br/>
-        <div>
-			<div>
-				Hur mår du idag? <br/>
-				<label>
-					<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
-					<input type="radio" ng-model="data.currentMood" value="happy">
-				</label>
 
-				<label>
-					<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
-					<input type="radio" ng-model="data.currentMood" value="neutral">
-				</label>
-				<label>
-					<img src="../Koood/app/images/sad.png" height="30" width="30"/>
-					<input type="radio" ng-model="data.currentMood" value="sad">
-				</label>
-			</div>
-			<div>
-				Välj stil: <br/>
-				<select ng-model="data.style">
-					<option value="Goth">Mys</option>
-					<option value="Fancy">Fest</option>
-					<option value="Hiphop">Hiphop</option>
-				</select>
+
+		Hur mår du idag? <br/>
+
+        <div class="row">
+			<label>
+				<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+				<input type="radio" ng-model="data.currentMood" value="happy">
+			</label>
+			<label>
+				<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
+				<input type="radio" ng-model="data.currentMood" value="neutral">
+			</label>
+			<label>
+				<img src="../Koood/app/images/sad.png" height="30" width="30"/>
+				<input type="radio" ng-model="data.currentMood" value="sad">
+			</label>
+
+        </div>
+
+		<br/>
+		<br/>
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<button type="button" class="toggle" data-toggle="collapse" data-target="#chooseStyle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span>Välj stil</span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 		</div>
-		Dagens prognos <br/>
+		<div id="chooseStyle" class=" row text-center navbar-collapse collapse">
+			<label class="styleSelectionButton">									<!-- skapa classen styleSelectionButton i css. -->
+				<input type="radio" ng-model="data.style" value="Goth">Mys</input>	<!-- Får det inte att funka att ha det som en knapp. -->
+			</label>																<!-- Det kopplar då inte till form:et -->
+			<br/>
+			<label class="styleSelectionButton">
+				<input type="radio" ng-model="data.style" value="Fancy">Fest</input>
+			</label>
+			<br/>
+			<label class="styleSelectionButton">
+				<input type="radio" ng-model="data.style" value="Hiphop">Hiphop</input>
+			</label>
+		</div>
+		<br/><br/>
+		Dagens prognos
+		<br/>
 		<p>Massa prognoser</p>
 		<input type="submit" ngClick="submitForm">
 	</form>
