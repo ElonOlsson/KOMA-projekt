@@ -5,7 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.home',
   'myApp.mood',
-  'myApp.basic' //<--- Här lägger ni till era moduler se home.js
+  'myApp.basic',
   'myApp.start',
   'myApp.home.carousel',
   'myApp.outfits'
