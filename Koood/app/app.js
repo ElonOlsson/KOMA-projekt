@@ -5,10 +5,15 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.home',
   'myApp.mood',
+<<<<<<< HEAD
   'myApp.basic' //<--- Här lägger ni till era moduler se home.js
+=======
+  'myApp.start',
+  'myApp.home.carousel',
+  'myApp.outfits'
+>>>>>>> 6a330601da4f1bd13135c6f585cd26cd2b1524db
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/home'}); //<--- Här skriver ni er startsida
+  $routeProvider.otherwise({redirectTo: '/start'}); //Vår startsida, vilket kommer vara den sidan man kommer till om man trycker på loggan.
 }]);
