@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.mood',
   'myApp.start',
   'myApp.home.carousel',
-  'myApp.outfits' 
+  'myApp.outfits',
+  'myApp.favorites'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
