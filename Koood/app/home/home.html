@@ -27,6 +27,7 @@
 					<uib-carousel interval="myInterval" active="activeSlide">
 						<uib-slide ng-repeat="item_top in items_top" index="$index">
 							<img ng-src="{{item_top.imgSrc}}" style="margin:auto;">
+							<h2>{{item_top.gender}}</h2>
 						</uib-slide>
 					</uib-carousel>
 				</div>

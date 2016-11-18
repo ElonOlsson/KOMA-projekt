@@ -1,4 +1,3 @@
-[{ "text":"learn angular", "done":true, "imgSrc":"http://lorempixel.com/400/200/food" },
-  { "text":"build an angular app", "done":false, "imgSrc":"http://lorempixel.com/400/200/" },
-  { "text":"something", "done":false, "imgSrc":"http://lorempixel.com/400/200/sports" },
-  { "text":"another todo", "done":true, "imgSrc":"http://lorempixel.com/400/200/people" }]
+[{ "gender":"male", "done":true, "imgSrc":"app/images/clothes/pants.png" },
+  { "gender":"female", "done":false, "imgSrc":"app/images/clothes/skirt.png" },
+  { "gender":"male", "done":false, "imgSrc":"app/images/clothes/shorts.png" }]
