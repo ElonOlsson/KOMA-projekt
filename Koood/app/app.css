@@ -67,20 +67,12 @@ input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    background-color: #ff66b3;
-    border: none;
+    background-color: #555555;
     color: white;
     padding: 10px 24px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 15px;
-    margin: 2px 1px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 10px 35px 0 rgba(0,0,0,0.19);
 }
 textarea{
 // Lägg till här
@@ -98,7 +90,7 @@ textarea{
 /* Start css stylesheet */
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", Times, serif;
     background-repeat: no-repeat; /* ingen upprepande bakgrund */
     background-attachment: fixed; /*  en fastställd bakgrund */
     background-position: center center; /*  bakgrundens position */
