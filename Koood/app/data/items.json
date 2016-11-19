@@ -1,4 +1,0 @@
-[{ "text":"learn angular", "done":true, "imgSrc":"http://lorempixel.com/400/200/food" },
-  { "text":"build an angular app", "done":false, "imgSrc":"http://lorempixel.com/400/200/" },
-  { "text":"something", "done":false, "imgSrc":"http://lorempixel.com/400/200/sports" },
-  { "text":"another todo", "done":true, "imgSrc":"http://lorempixel.com/400/200/people" }]
