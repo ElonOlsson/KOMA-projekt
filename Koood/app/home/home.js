@@ -21,30 +21,33 @@ function CarouselCtrl($scope, $http){
     $scope.myInterval = 3000;
 };
 
-/*home.controller('popoverCtrl', function($scope) {
-  $scope.showPopover = function() {
-    $scope.popoverIsVisible = true;
-  };
-
-  $scope.hidePopover = function() {
-    $scope.popoverIsVisible = false;
-  };
-});*/
-
-/*
-home.controller('ItemsCtrl', function($scope, $http) {
-    $http.get('app/data/items_top.json')
-        .then(function(response) {
-            $scope.items = response.data;
-        }, function (response) {
-            $scope.items = "Somethig went wrong";
-        });
-});
-*/
-
 home.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {
     templateUrl: 'app/home/home.html',
     controller: ''
   });
 }])
+
+
+
+/*
+home.controller('popoverCtrl', function($scope) {
+ $scope.showPopover = function() {
+ $scope.popoverIsVisible = true;
+ };
+
+ $scope.hidePopover = function() {
+ $scope.popoverIsVisible = false;
+ };
+ });*/
+
+/*
+ home.controller('ItemsCtrl', function($scope, $http) {
+ $http.get('app/data/items_top.json')
+ .then(function(response) {
+ $scope.items = response.data;
+ }, function (response) {
+ $scope.items = "Somethig went wrong";
+ });
+ });
+ */
