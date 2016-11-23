@@ -385,12 +385,17 @@ textarea{
 /* Start css stylesheet */
 
 
-/*body {
+body.start {
     font-family: "Times New Roman", Times, serif;
     background-repeat: no-repeat; /* ingen upprepande bakgrund */
-    /*background-attachment: fixed; /*  en fastställd bakgrund */
-    /*background-position: center center; /*  bakgrundens position */
-/*} */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
+}
+
+body.start #page-header-wrapper {
+    display: none !important;
+}
+
 
 .moln{
     position: absolute;
