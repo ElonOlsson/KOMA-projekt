@@ -1,0 +1,3 @@
+[{ "gender":"male", "done":true, "imgSrc":"app/images/clothes/top.png" },
+  { "gender":"male", "done":false, "imgSrc":"app/images/clothes/t-shirt.png" },
+  { "gender":"male", "done":false, "imgSrc":"app/images/clothes/shirt.png" }]
