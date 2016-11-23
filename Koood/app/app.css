@@ -38,6 +38,11 @@
   padding: 5px 15px;
 }
 
+#menuButton{
+    position: absolute;
+    z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
+}
+
 
 
 /* Popup container */
