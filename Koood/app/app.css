@@ -38,6 +38,11 @@
   padding: 5px 15px;
 }
 
+#menuButton{
+    position: absolute;
+    z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
+}
+
 
 
 /* Popup container */
@@ -151,11 +156,11 @@
    z-index: auto;
 
    float: right;
-   padding: 20px; /* 15% from the top and centered
+   padding: 20px; /* 15% from the top and centered*/
 
 
 
-  border: 1px solid #800000;
+  /* border: 1px solid #800000;
   width: 50%; /* Could be more or less, depending on screen size -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -495,9 +500,6 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     100% {background-image: url('../app/images/bakgrund2.jpg');}
 }
 
-<<<<<<< HEAD
-=======
-
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Favorites css stylesheet */
@@ -568,6 +570,3 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 {
     opacity: 0.4;
 }
-
-
->>>>>>> 410100ab5d0204b8e86ebdadff001ce92c5e30d2
