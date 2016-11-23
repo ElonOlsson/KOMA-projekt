@@ -1,0 +1,126 @@
+<html>
+<head>
+    <style>
+        /*
+        div.background {
+            border: 2px solid black;
+            margin: 30px;
+            background-color: #ffeefa;
+        }
+
+        div.transbox {
+            margin: auto;
+            background-color: #800000;
+            border: 1px solid black;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+        /*
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #fff0f5;
+        }
+
+        body {
+            background-color: #fff0f5;
+        }
+*/
+
+
+    </style>
+</head>
+<body>
+<!--
+<div class="popup" onclick="myFunction()">Click me!
+
+        <span class="popuptext" id="myPopup">
+
+                <div class="transbox">
+
+                    <a href="default.asp">
+                        <img src="app/images/basic_heart.gif" alt="Heart" style="float:left; width:42px; height:42px;">
+                    </a>
+
+                    <a href="default.asp">
+                        <img src="app/images/basic_x.png" alt="X" style="float:right; width:20px; height:20px;">
+                    </a>
+
+                    <img src="app/images/basic_shirt.png" alt="Basic Shirt" style="float:center;width:254px;height:178px;">
+                </div>
+
+                <div class = "text">
+                    <p> "Här kan det stå lite om plagget" </p>
+                </div>
+        </span>
+
+    <div class = "background">
+        <img src="app/images/basic_x.png" alt="X" style="float:center; width:100px; height:100px; ">
+    </div>
+
+</div>
+-->
+
+<!-- Trigger/Open The Modal -->
+
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+
+<div id="myModal" class="modal">
+    <div class="popup">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <span class="close">X</span>
+
+            <a href="default.asp">
+                <img src="app/images/basic_heart.gif" alt="Heart" style="float:left; width:42px; height:42px;">
+            </a>
+
+            <img src="app/images/basic_shirt.png" alt="Basic Shirt" style="float:center;width:254px;height:178px;">
+
+            <div class = "text">
+                <p> "Här kan det stå lite om plagget" </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Egentligen JS kod men fungerade inte där -->
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+</body>
+</html>
