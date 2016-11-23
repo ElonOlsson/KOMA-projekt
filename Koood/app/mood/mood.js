@@ -27,3 +27,7 @@ mood.config(['$routeProvider', function($routeProvider) {
   });
 
 }])
+
+function home() {
+        window.location = "#!/home";
+};
