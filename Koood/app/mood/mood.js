@@ -12,6 +12,12 @@ mood.controller('FormCtrl', function($scope) {
 	$scope.submitForm = function() {
 		console.log($scope.data);
 	}
+	/*
+	$scope.newValue = function() {
+		console.log($scope.data.style);
+		//data-target="#chooseStyle"
+	}
+	*/
 });
 
 mood.config(['$routeProvider', function($routeProvider) {

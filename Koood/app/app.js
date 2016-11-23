@@ -5,9 +5,11 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.home',
   'myApp.mood',
+  'myApp.basic',
   'myApp.start',
   'myApp.home.carousel',
-  'myApp.outfits'
+  'myApp.outfits',
+  'myApp.favorites'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
