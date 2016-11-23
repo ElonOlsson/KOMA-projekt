@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637e250-33ed-44be-ae89-7e8357a7d53e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/KOMA-projekt.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/app.css" afterPath="$PROJECT_DIR$/Koood/app/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/mood/mood.html" afterPath="$PROJECT_DIR$/Koood/app/mood/mood.html" />
     </list>
@@ -442,12 +445,12 @@
       <workItem from="1479914868889" duration="58000" />
       <workItem from="1479914929485" duration="5000" />
       <workItem from="1479915749673" duration="673000" />
-      <workItem from="1479921953773" duration="375000" />
+      <workItem from="1479921953773" duration="447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21135000" />
+    <option name="totallyTimeSpent" value="21207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1257" height="665" extended-state="0" />
