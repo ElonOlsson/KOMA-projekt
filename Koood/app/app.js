@@ -4,10 +4,12 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.home.carousel',
   'myApp.mood',
+  'myApp.basic',
+  'myApp.start',
+  'myApp.home.carousel',
   'myApp.outfits',
-    'myApp.start'
+  'myApp.favorites'
 ]).
 
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

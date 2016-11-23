@@ -73,6 +73,10 @@ body {
 /* https://css-tricks.com/almanac/properties/a/animation/ 
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 .background{
+    font-family: "Times New Roman", Times, serif;
+    background-repeat: no-repeat; /* ingen upprepande bakgrund */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
    
 	-webkit-animation-name: example; 
     -webkit-animation-duration: 12s;
