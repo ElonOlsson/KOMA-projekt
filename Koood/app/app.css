@@ -136,7 +136,11 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
+<<<<<<< HEAD
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+=======
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+>>>>>>> e58ce8aa3dab49036095a2fc16f3c92c62464381
 }
 
 
@@ -336,23 +340,21 @@
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 
+
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
 }
+
 label > input + img{ /* IMAGE STYLES */
   cursor: pointer;
   border: 2px solid transparent;
+
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border: 2px solid #f00;
 }
-
-/*.button:hover {
-    background-color: #ff3399;
-    color: white;
-}*/
 
 input[type=text] {
 // Lägg till här
@@ -493,6 +495,8 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     100% {background-image: url('../app/images/bakgrund2.jpg');}
 }
 
+<<<<<<< HEAD
+=======
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -566,3 +570,4 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 }
 
 
+>>>>>>> 410100ab5d0204b8e86ebdadff001ce92c5e30d2
