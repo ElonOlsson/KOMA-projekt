@@ -186,8 +186,8 @@
 
 
    /* height: 50%;
-    /* Set your own height: percents, ems, whatever! *
-
+    /* Set your own height: percents, ems, whatever! */
+/*
   width: 50%;
   !* Set your own width: percents, ems, whatever! *!
 
@@ -206,7 +206,7 @@
   right: 0;
   !* Set the bounds in which to center it, relative to its parent/container *!
 
-  background-color: green;*/
+  background-color: green; */
 }
 
 
@@ -265,6 +265,7 @@
   padding: 40px;
 !* The Close Button *!
 */
+
 .close {
   color: #aaa;
   float: right;
@@ -398,8 +399,9 @@ textarea{
 /* Start css stylesheet */
 
 
-/*body {
+body.start {
     font-family: "Times New Roman", Times, serif;
+/*
     background-image: url("images/background/watercolour-blur.png");
     background-repeat: repeat; /* ingen upprepande bakgrund */
     /*background-attachment: fixed; /*  en fastställd bakgrund */
@@ -413,6 +415,14 @@ textarea{
     position: float;
     z-index: -1;
 }*/
+    background-repeat: no-repeat; /* ingen upprepande bakgrund */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
+}
+
+body.start #page-header-wrapper {
+    display: none !important;
+}
 
 .moln{
     position: absolute;

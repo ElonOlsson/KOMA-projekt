@@ -25,7 +25,7 @@
 				<p>Hur mår du idag?</p>
 				<br/>
 				<label>
-					<img class = "butt" src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+					<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
 					<input type="radio" ng-model="data.currentMood" value="happy">
 				</label>
 				<label>
@@ -37,7 +37,6 @@
 					<img src="../Koood/app/images/sad.png" height="30" width="30"/>
 					<input type="radio" ng-model="data.currentMood" value="sad">
 				</label>
-
         </div>
 
 		<br/>
@@ -67,7 +66,7 @@
 			</label>
 		</div>
 		<br/><br/>
-		<a href="#!/home"><input type="submit" ngClick="submitForm"></a>
+		<input type="submit" ngClick="submitForm" onClick="home()">
 	</form>
 </div>
 
