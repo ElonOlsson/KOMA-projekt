@@ -179,10 +179,7 @@ label > input + img{ /* IMAGE STYLES */
 
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-.menusomething img {
-    display:block;
-    margin:10px 0 10px 0;
-}
+
     border: 2px solid #f00;
 }
 
@@ -202,23 +199,24 @@ textarea{
 }
 
 #mood
-{
+{   
     margin: 18px;
 }
 
 #chooseStyle
 {
-    background-color: lightblue;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: lightpink;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
 }
 
 .toggle
 {
-    color: white;
     padding: 10px 55px;
-    background-color: gray;
     font-size: 15px;
-
+    color: black;
+    background: rgba(0,0,0,0);
+    border: solid 5px black;
 
 }
 /*-------------------------------------------------------------------------------------------------*/
