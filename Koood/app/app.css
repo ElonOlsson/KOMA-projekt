@@ -395,26 +395,21 @@ textarea{
     margin:auto;
 }
 
+#imagesButtom {
+    position:relative;
+}
+
+#imgButtom {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
 
 
 body.start {
-    font-family: "Times New Roman", Times, serif;
-/*
-    background-image: url("images/background/watercolour-blur.png");
-    background-repeat: repeat; /* ingen upprepande bakgrund */
-    /*background-attachment: fixed; /*  en fastställd bakgrund */
-    /*background-position: center center; /*  bakgrundens position */
-/*}*/
-/*
-.backgroundMain {
-    background-image: url("images/background/watercolour-blur.png");
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    position: float;
-    z-index: -1;
-}*/
     background-repeat: no-repeat; /* ingen upprepande bakgrund */
     background-attachment: fixed; /*  en fastställd bakgrund */
     background-position: center center; /*  bakgrundens position */
@@ -422,6 +417,26 @@ body.start {
 
 body.start #page-header-wrapper {
     display: none !important;
+}
+
+body {
+    background-attachment: fixed;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .moln{

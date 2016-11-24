@@ -1,7 +1,7 @@
 <div class="container_center">
 	<div class="weather-forecast">
-		<div class="col-xs-2"><img class="weather-icon" src="../Koood/app/images/weather-icon-sun-rain.png"/></div>
-		<div class="col-xs-8">20 C <br />
+		<div class="col-xs-2"><img class="weather-icon" src="../Koood/app/images/weather-icon-sun-rain-black.png"/></div>
+		<div class="col-xs-8"><h3>20 C </h3><br />
 		Soligt med risk för regn.</div>
 		<div class="col-xs-2">!!!</div>
 		<!--
@@ -16,6 +16,7 @@
 			<div ng-controller="CarouselCtrl" id="slides_control_top" class="ng-scope">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_top in items_top" index="$index">
+
 						<img id="imgTopCarousel" ng-src="{{item_top.imgSrc}}" >
 					</uib-slide>
 				</uib-carousel>
@@ -27,7 +28,10 @@
 			<div ng-controller="CarouselCtrl" id="slides_control_bottom">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
-						<img id="imgTopCarousel" ng-src="{{item_bottom.imgSrc}}">
+						<div id="imagesButtom">
+							<img src="app/images/heart-gray.png" id="imgHeart">
+							<img id="imgTopCarousel" ng-src="{{item_bottom.imgSrc}}" id="imgButtom">
+						</div>
 					</uib-slide>
 				</uib-carousel>
 			</div>
