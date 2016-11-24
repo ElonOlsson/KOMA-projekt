@@ -136,7 +136,7 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 
@@ -498,8 +498,6 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     100% {background-image: url('../app/images/bakgrund2.jpg');}
 }
 
-<<<<<<< HEAD
-=======
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -572,5 +570,4 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     opacity: 0.4;
 }
 
-
->>>>>>> 410100ab5d0204b8e86ebdadff001ce92c5e30d2
+/* **************** TEST **************** */
