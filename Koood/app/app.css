@@ -231,10 +231,10 @@ textarea{
 
 #chooseStyle
 {
-    background: rgba(0,0,0,0);
-    /*background-color: floralwhite;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
-
+    background: rgba(0,0,0,0.1);
+    opacity: 3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding: 12px 16px;*/
 }
 
 .toggle
