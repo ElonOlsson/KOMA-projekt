@@ -1,7 +1,4 @@
 <div class="container_center">
-	<span>En sida ni kan ha som grund</span>
-	
-	
 	<div class="weather-forecast">
 		<div class="col-xs-2"><img class="weather-icon" src="../Koood/app/images/weather-icon-sun-rain.png"/></div>
 		<div class="col-xs-8">20 C <br />
@@ -13,31 +10,26 @@
 		<div class="popover" ng-show="popoverIsVisible">Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</div>
 		-->
 	</div>
-	<div class="outfits col-xs-12">
-		<div class=""outfit-top  ng-app="myApp.home.carousel">
+	<div class="outfitCarousel col-xs-12">
+		<div class="topCarousel  ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
-			<div ng-controller="CarouselCtrl" id="slides_control_top">
-				<div>
-					<uib-carousel interval="myInterval" active="activeSlide">
-						<uib-slide ng-repeat="item_top in items_top" index="$index">
-							<img ng-src="{{item_top.imgSrc}}" style="margin:auto;">
-							<h2>{{item_top.gender}}</h2>
-						</uib-slide>
-					</uib-carousel>
-				</div>
+			<div ng-controller="CarouselCtrl" id="slides_control_top" class="ng-scope">
+				<uib-carousel interval="myInterval" active="activeSlide">
+					<uib-slide ng-repeat="item_top in items_top" index="$index">
+						<img id="imgTopCarousel" ng-src="{{item_top.imgSrc}}" >
+					</uib-slide>
+				</uib-carousel>
 			</div>
 		<br />
 		</div>
-		<div class=""outfit-bottom ng-app="myApp.home.carousel">
+		<div class="bottomCarousel ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
 			<div ng-controller="CarouselCtrl" id="slides_control_bottom">
-				<div>
-					<uib-carousel interval="myInterval" active="activeSlide">
-						<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
-							<img ng-src="{{item_bottom.imgSrc}}" style="margin:auto;">
-						</uib-slide>
-					</uib-carousel>
-				</div>
+				<uib-carousel interval="myInterval" active="activeSlide">
+					<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
+						<img id="imgTopCarousel" ng-src="{{item_bottom.imgSrc}}">
+					</uib-slide>
+				</uib-carousel>
 			</div>
 		</div>
 	</div>

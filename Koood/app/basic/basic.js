@@ -45,3 +45,4 @@ angular.module('myApp.basic', ['ngRoute'])
             controller: ''
         });
     }])
+

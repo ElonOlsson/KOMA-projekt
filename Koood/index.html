@@ -15,7 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-
+<div class="backgroundMain">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -29,13 +29,8 @@
         </button>
       </div>
 
-      <!--<div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#!/mood">Humör</a></li>
-          <li><a href="#!/favorties">Favoriter</a></li>
-          <li><a href="#!/basic">Basic</a></li>-->
-
       <div id="menuButton" class= "navbar-collapse collapse">
+
         <ul class= "nav navbar-nav">
           <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
             <img src="app/images/Circle-icons-cloud.png" height="20" width="20"/> Humör</a></li>
@@ -50,7 +45,7 @@
     </div>
   </nav>
 
-  <div class="container-fluid" ng-view></div>  <!-- Det är här eran sidor ni laddar från routeprovider kommer att hammna, ty ng-view -->
+  <div class="container-fluid" ng-view></div>
 
   <!-- library dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -60,7 +55,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
-
   <!-- end -->
 
   <!-- angular modules -->
@@ -73,5 +67,6 @@
   <script src="app/favorites/favorites.js"></script>
 
   <!-- end -->
+</div>
 </body>
 </html>

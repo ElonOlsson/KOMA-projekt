@@ -1,8 +1,13 @@
 <!-- AngularJS -->
 <div class="visible-xs" ng-app="myApp.mood" ng-controller="FormCtrl">
-	<p>Let's go!</p>
 	<form name="moodForm" ng-submit="submitForm()">
         <div class="row text-center">
+
+			Dagens prognos
+			<br/>
+			<img src="../Koood/app/images/weatherbar.png" height="60" width="330"/>
+			<br><br/>
+
 			<p>Kön?</p>
 			<br/>
             <label>
@@ -35,7 +40,7 @@
 
 		<br/>
 		<br/>
-
+		
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<button type="button" class="toggle" data-toggle="collapse" data-target="#chooseStyle">
@@ -60,10 +65,7 @@
 			</label>
 		</div>
 		<br/><br/>
-		Dagens prognos
-		<br/>
-		<p>Massa prognoser</p>
-		<input type="submit" ngClick="submitForm">
+		<input type="submit" ngClick="submitForm" onClick="home()">
 	</form>
 </div>
 
