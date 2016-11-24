@@ -38,6 +38,11 @@
   padding: 5px 15px;
 }
 
+#menuButton{
+    position: absolute;
+    z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
+}
+
 
 
 /* Popup container */
@@ -147,11 +152,11 @@
    z-index: auto;
 
    float: right;
-   padding: 20px; /* 15% from the top and centered
+   padding: 20px; /* 15% from the top and centered*/
 
 
 
-  border: 1px solid #800000;
+  /* border: 1px solid #800000;
   width: 50%; /* Could be more or less, depending on screen size -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -336,42 +341,32 @@
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 
+
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
 }
+
 label > input + img{ /* IMAGE STYLES */
   cursor: pointer;
   border: 2px solid transparent;
+
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border: 2px solid #f00;
 }
 
-/*.button:hover {
-    background-color: #ff3399;
-    color: white;
-}*/
-
 input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    background-color: #ff66b3;
-    border: none;
+    background-color: #555555;
     color: white;
     padding: 10px 24px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 15px;
-    margin: 2px 1px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 10px 35px 0 rgba(0,0,0,0.19);
 }
 textarea{
 // Lägg till här
@@ -385,15 +380,39 @@ textarea{
   width: 50px;
 }
 
+.outfitCarousel {
+    padding: 20px;
+}
+
+#slides_control_top {
+    padding-bottom: 10px;
+}
+
+#imgTopCarousel, #imgBottomCarousel {
+    height: 150px;
+    overflow: hidden;
+    margin:auto;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
 
+
 /*body {
     font-family: "Times New Roman", Times, serif;
-    background-repeat: no-repeat; /* ingen upprepande bakgrund */
+    background-image: url("images/background/watercolour-blur.png");
+    background-repeat: repeat; /* ingen upprepande bakgrund */
     /*background-attachment: fixed; /*  en fastställd bakgrund */
     /*background-position: center center; /*  bakgrundens position */
-/*} */
+/*}*/
+/*
+.backgroundMain {
+    background-image: url("images/background/watercolour-blur.png");
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: float;
+    z-index: -1;
+}*/
 
 .moln{
     position: absolute;
@@ -502,11 +521,10 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
-    33%   {background-image: url('images/background/bakgrund2.jpg');}
+    33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
 }
-
 
 
 /*-------------------------------------------------------------------------------------------------*/

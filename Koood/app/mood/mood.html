@@ -1,8 +1,13 @@
 <!-- AngularJS -->
 <div class="visible-xs" ng-app="myApp.mood" ng-controller="FormCtrl">
-	<p>Let's go!</p>
 	<form name="moodForm" ng-submit="submitForm()">
         <div class="row text-center">
+
+			Dagens prognos
+			<br/>
+			<img src="../Koood/app/images/weatherbar.png" height="60" width="330"/>
+			<br><br/>
+
 			<p>Kön?</p>
 			<br/>
             <label>
@@ -20,10 +25,9 @@
 				<p>Hur mår du idag?</p>
 				<br/>
 				<label>
-					<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+					<img class = "butt" src="../Koood/app/images/happy-512.png" height="30" width="30"/>
 					<input type="radio" ng-model="data.currentMood" value="happy">
 				</label>
-
 				<label>
 					<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
 					<input type="radio" ng-model="data.currentMood" value="neutral">
@@ -38,7 +42,7 @@
 
 		<br/>
 		<br/>
-
+		
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<button type="button" class="toggle" data-toggle="collapse" data-target="#chooseStyle">
@@ -63,10 +67,7 @@
 			</label>
 		</div>
 		<br/><br/>
-		Dagens prognos
-		<br/>
-		<p>Massa prognoser</p>
-		<input type="submit" ngClick="submitForm">
+		<a href="#!/home"><input type="submit" ngClick="submitForm"></a>
 	</form>
 </div>
 
@@ -101,3 +102,4 @@
 	</form>
 </div>
  -->
+
