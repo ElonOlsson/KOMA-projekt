@@ -45,18 +45,17 @@
 
 
 #myModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 
@@ -180,7 +179,11 @@ label > input + img{ /* IMAGE STYLES */
 
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border: 2px solid #f00;
+.menusomething img {
+    display:block;
+    margin:10px 0 10px 0;
+}
+    border: 2px solid #f00;
 }
 
 input[type=text] {
@@ -198,13 +201,26 @@ textarea{
 // Lägg till här
 }
 
+#mood
+{
+    margin: 18px;
+}
+
 #chooseStyle
 {
-    background-color: lightsteelblue;
+    background-color: lightblue;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.toggle
+{
+    color: white;
+    padding: 10px 55px;
+    background-color: gray;
+    font-size: 15px;
 
+
+}
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
