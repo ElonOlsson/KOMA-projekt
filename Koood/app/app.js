@@ -8,12 +8,11 @@ var app = angular.module('myApp', [
   'myApp.basic',
   'myApp.start',
   'myApp.home.carousel',
+  'myApp.favorites',
   'myApp.outfits'
 ])
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  'myApp.outfits',
-  'myApp.favorites';
 
   $locationProvider.hashPrefix('!');
 
