@@ -20,11 +20,9 @@
 				<input type="radio" ng-model="data.gender" value="female" />
 			 </label>
 		</div>
-        <br/>
 
         <div class="row text-center">
 				<p>Hur mår du idag?</p>
-				<br/>
 				<label>
 					<img id="mood" src="../Koood/app/images/smile.png" height="40" width="40" id="changer" onclick="changeHappy(this)" />
 					<input type="radio" ng-model="data.currentMood" value="happy">
@@ -39,21 +37,23 @@
 				</label>
         </div>
 
+		<br>
 		<br/>
-		<br/>
-		
+
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<button type="button" class="toggle" data-toggle="collapse" data-target="#chooseStyle">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
-					<span>Välj stil</span>
+					<span> Välj stil </span>
+					<img src="../Koood/app/images/caret-down.png" height="15" width="15"/>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
 		</div>
 		<div id="chooseStyle" class="row text-center navbar-collapse collapse">
-			<label class="styleSelectionButton" data-parent="#chooseStyle" data-toggle="collapse" data-target="#chooseStryle">									<!-- skapa classen styleSelectionButton i css. -->
+			<label class="styleSelectionButton" data-parent="#chooseStyle" data-toggle="collapse" data-target="#chooseStryle">
+				<!-- skapa classen styleSelectionButton i css. -->
 				<input type="radio" ng-model="data.style" value="Goth" >Goth</input>	<!-- Får det inte att funka att ha det som en knapp. -->
 			</label>																<!-- Det kopplar då inte till form:et --> <!--ng-change="newValue()"-->
 			<br/>
@@ -66,7 +66,9 @@
 			</label>
 		</div>
 		<br/><br/>
+		<div class="row text-center">
 		<input type="submit" ngClick="submitForm" onClick="home()">
+		</div>
 	</form>
 </div>
 

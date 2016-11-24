@@ -16,6 +16,12 @@
     background-position: center center; /*  bakgrundens position */
 }
 
+p
+{
+    font-family: "Corbel", Times, serif;
+    font-size: 20px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -203,12 +209,11 @@ input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    background-color: #555555;
-    color: white;
-    padding: 10px 24px;
-    border-radius: 8px;
-    text-align: center;
+    padding: 10px 55px;
     font-size: 15px;
+    color: black;
+    background: rgba(0,0,0,0);
+    border: solid 5px black;
 }
 textarea{
 // Lägg till här
@@ -231,8 +236,8 @@ textarea{
     padding: 10px 55px;
     font-size: 15px;
     color: black;
+    border: none;
     background: rgba(0,0,0,0);
-    border: solid 5px black;
 
 }
 /*-------------------------------------------------------------------------------------------------*/
