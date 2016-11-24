@@ -12,11 +12,11 @@
 		<div class="row text-center">
 			<p>Kön?</p>
             <label>
-				<img src="../Koood/app/images/Male.png" height="55" width="50" id="changer" onclick="changeMale(this)"/>
+				<img id="mood" src="../Koood/app/images/Male.png" height="55" width="50" id="changer" onclick="changeMale(this)"/>
                 <input type="radio" ng-model="data.gender" value="male" />
             </label>
 			 <label>
-				 <img src="../Koood/app/images/Female.png" height="50" width="50" id="changer" onclick="changeFemale(this)"/>
+				 <img id="mood" src="../Koood/app/images/Female.png" height="50" width="50" id="changer" onclick="changeFemale(this)"/>
 				<input type="radio" ng-model="data.gender" value="female" />
 			 </label>
 		</div>
@@ -26,15 +26,15 @@
 				<p>Hur mår du idag?</p>
 				<br/>
 				<label>
-					<img src="../Koood/app/images/smile (1).png" height="40" width="40" id="changer" onclick="changeHappy(this)" />
+					<img id="mood" src="../Koood/app/images/smile.png" height="40" width="40" id="changer" onclick="changeHappy(this)" />
 					<input type="radio" ng-model="data.currentMood" value="happy">
 				</label>
 				<label>
-					<img src="../Koood/app/images/straight.png" height="40" width="40" id="changer" onclick="changeNeutral(this)"/>
+					<img id="mood" src="../Koood/app/images/straight.png" height="40" width="40" id="changer" onclick="changeNeutral(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="neutral">
 				</label>
 				<label>
-					<img src="../Koood/app/images/sad_new.png" height="40" width="40" id="changer" onclick="changeSad(this)"/>
+					<img id="mood" src="../Koood/app/images/sad_new.png" height="40" width="40" id="changer" onclick="changeSad(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="sad">
 				</label>
         </div>
