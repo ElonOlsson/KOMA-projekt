@@ -344,7 +344,6 @@
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
@@ -374,6 +373,13 @@ input[type=submit] {
 textarea{
 // Lägg till här
 }
+
+#chooseStyle
+{
+    background-color: lightsteelblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
