@@ -141,7 +141,8 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 
@@ -341,6 +342,7 @@
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
 
 
 /*Göra radioknapparna osynliga med bilden*/
@@ -375,22 +377,48 @@ textarea{
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
+
 
 .weather-icon {
   height: 50px;
   width: 50px;
 }
 
+.outfitCarousel {
+    padding: 20px;
+}
+
+#slides_control_top {
+    padding-bottom: 10px;
+}
+
+#imgTopCarousel, #imgBottomCarousel {
+    height: 150px;
+    overflow: hidden;
+    margin:auto;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
 
 
-/*body {
+/*.background {
     font-family: "Times New Roman", Times, serif;
+    background-image: url("images/background/watercolour-blur.png");
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: float;
+    z-index: -1;
     background-repeat: no-repeat; /* ingen upprepande bakgrund */
     /*background-attachment: fixed; /*  en fastställd bakgrund */
-    /*background-position: center center; /*  bakgrundens position */
-/*} */
+   /* background-position: center center; /*  bakgrundens position */
+/* }*/
+
+body.start #page-header-wrapper {
+    display: none !important;
+}
 
 .moln{
     position: absolute;
@@ -414,7 +442,6 @@ textarea{
 }
 
 .button{
-    background:  #b3b3b3;
     border: none;
     color: white;
     padding: 12px 28px;
@@ -436,7 +463,7 @@ textarea{
 }
 
 .help{
-    background:  #b3b3b3;
+    background-image: url('/images/background/help-button.png');
     border: none;
     color: white;
     width: 60px;
@@ -457,6 +484,11 @@ textarea{
     color: white;
 }
 
+.get-started {
+    background-image: url('/images/background/get-started-button.png');
+    border: none;
+}
+
 /* Specifikationer fÃ¶r att skapa en animation fÃ¶r bakgrundsbilderna*/
 /* https://css-tricks.com/almanac/properties/a/animation/
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
@@ -473,30 +505,23 @@ textarea{
     animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
 }
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Anpassat fÃ¶r: Chrome, Safari, Opera */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @-webkit-keyframes example {
-    0%   {background-image: url('../app/images/bakgrund1.jpg');}
-    33%   {background-image: url('../app/images/bakgrund2.jpg');}
-    66%  {background-image: url('../app/images/bakgrund1.jpg');}
-    100% {background-image: url('../app/images/bakgrund2.jpg');}
+    0%   {background-image: url('images/background/bakgrund1.jpg');}
+    33%  {background-image: url('images/background/bakgrund2.jpg');}
+    66%  {background-image: url('images/background/bakgrund1.jpg');}
+    100% {background-image: url('images/background/bakgrund2.jpg');}
 }
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Standard syntax */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @keyframes example {
-    0%   {background-image: url('../app/images/bakgrund1.jpg');}
-    33%   {background-image: url('../app/images/bakgrund2.jpg');}
-    66%  {background-image: url('../app/images/bakgrund1.jpg');}
-    100% {background-image: url('../app/images/bakgrund2.jpg');}
+    0%   {background-image: url('images/background/bakgrund1.jpg');}
+    33%  {background-image: url('images/background/bakgrund2.jpg');}
+    66%  {background-image: url('images/background/bakgrund1.jpg');}
+    100% {background-image: url('images/background/bakgrund2.jpg');}
 }
-
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Favorites css stylesheet */
@@ -567,3 +592,5 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 {
     opacity: 0.4;
 }
+
+/* **************** TEST **************** */
