@@ -1,15 +1,14 @@
 <!-- AngularJS -->
 <div class="visible-xs" ng-app="myApp.mood" ng-controller="FormCtrl">
 	<form name="moodForm" ng-submit="submitForm()">
-        <div class="row text-center">
+		    <!-- <div class="row text-center">
+			<a href="http://www.accuweather.com/sv/se/norrkoping/314360/weather-forecast/314360" class="aw-widget-legal"></a>
+			<div id="awcc1479974805461" class="aw-widget-current"  data-locationkey="314360" data-unit="c" data-language="sv" data-useip="false" data-uid="awcc1479974805461"></div>
+			<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script> -->
+		<iframe id="forecast_embed" type="text/html" frameborder="0.5" height="245" width="100%"
+				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping, Sverige&color=#00aaff&font=Arial&units=si"> </iframe>
 
-			Dagens prognos
-			<br/>
-			<img src="../Koood/app/images/weatherbar.png" height="60" width="330"/>
-			<br><br/>
-
-			<p>Kön?</p>
-			<br/>
+		<p>Kön?</p>
             <label>
                 <img src="../Koood/app/images/Male.png" height="30" width="30"/>
                 <input type="radio" ng-model="data.gender" value="male" />
