@@ -73,13 +73,12 @@ p
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
 }
 
-<<<<<<< HEAD
+
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-=======
->>>>>>> ffc190239defec956b327e1e1061b4545f8838c7
+
 #myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -108,10 +107,7 @@ p
   width: 100%; /* Could be more or less, depending on screen size */
   -webkit-transform: translate(-50%, -50%);
 
-   z-index: auto;
-
-   float: right;
-   padding: 20px; /* 15% from the top and centered*/
+ /* 15% from the top and centered*/
 }
 
 #myBtn {
@@ -472,7 +468,6 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 }
 
 /* **************** TEST **************** */
-<<<<<<< HEAD
 
 /*-------------------------------------------------------------------------------------------------*/
 /* image
@@ -577,6 +572,3 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 
 
 
-
-=======
->>>>>>> ffc190239defec956b327e1e1061b4545f8838c7
