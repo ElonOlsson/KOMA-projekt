@@ -1,5 +1,31 @@
 /* app css stylesheet */
 
+.purplesky::after {
+    content: "";
+    background-image: url('images/bakgrund.jpg');
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: repeat; /* ingen upprepande bakgrund */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+p
+{
+    font-family: "Corbel", Times, serif;
+    font-size: 20px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -34,6 +60,10 @@
   width: 65px;
 }
 
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .navbar-brand {
   padding: 5px 15px;
 }
@@ -43,23 +73,25 @@
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
 }
 
+<<<<<<< HEAD
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
+=======
+>>>>>>> ffc190239defec956b327e1e1061b4545f8838c7
 #myModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 
@@ -80,17 +112,13 @@
 
    float: right;
    padding: 20px; /* 15% from the top and centered*/
-
 }
 
 #myBtn {
-
   position: absolute;
   margin-left: 100px;
   margin-top: 200px;
-
 }
-
 
 .close {
   color: #aaa;
@@ -114,8 +142,9 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
-
+.modal-body {
+    padding: 2px 16px;
+}
 
 /* Modal Footer */
   .modal-footer {
@@ -125,8 +154,7 @@
 }
 
 /* Modal Content */
-
-  .modal-content {
+.modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -142,8 +170,7 @@
 }
 
 /* Add Animation */
-
-  @-webkit-keyframes animatetop {
+@-webkit-keyframes animatetop {
   from {
     top: -500px;
     opacity: 0}
@@ -162,13 +189,11 @@
     top: 0;
     opacity: 1
   }
-
 }
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
-
 
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
@@ -182,40 +207,74 @@ label > input + img{ /* IMAGE STYLES */
 
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border: 2px solid #f00;
+
+    border: 2px solid #f00;
 }
 
 input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    background-color: #555555;
-    color: white;
-    padding: 10px 24px;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 6px;
+    padding: 10px 55px;
     font-size: 15px;
+    color: black;
+    background: rgba(0,0,0,0);
+    border: solid 5px black;
 }
 textarea{
 // Lägg till här
 }
 
+#mood
+{   
+    margin: 18px;
+}
+
+#chooseStyle
+{
+    background: rgba(0,0,0,0.1);
+    opacity: 3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding: 12px 16px;*/
+}
+
+.toggle
+{
+    padding: 10px 55px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    background: rgba(0,0,0,0);
+
+}
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-
-.weather-icon {
-  height: 50px;
-  width: 50px;
-}
-
-.outfitCarousel {
+div.outfitCarousel {
     padding: 20px;
+    width: 100%;
+    margin: auto;
+    display: table;
 }
 
-#slides_control_top {
-    padding-bottom: 10px;
+.slides_control_top, .slides_control_bottom {
+    display: inline-block;
+    border: 2px solid #FAFAFA;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    -webkit-column-break-inside: avoid;
+    padding: 15px 15px 5px 15px;
+    background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }
 
 #imgTopCarousel, #imgBottomCarousel {
@@ -224,32 +283,31 @@ textarea{
     margin:auto;
 }
 
+#imgButtom {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.carousel-control {
+    top: 50%;
+    width: auto;
+    height: 0em;
+    background: transparent;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-
-/*.background {
-    font-family: "Times New Roman", Times, serif;
-    background-image: url("images/background/watercolour-blur.png");
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    position: float;
-    z-index: -1;
-    background-repeat: no-repeat; /* ingen upprepande bakgrund */
-    /*background-attachment: fixed; /*  en fastställd bakgrund */
-   /* background-position: center center; /*  bakgrundens position */
-/* }*/
-
-body.start #page-header-wrapper {
-    display: none !important;
-}
-
-.moln{
+.help {
     position: absolute;
     top: 13%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 .center{
@@ -267,6 +325,7 @@ body.start #page-header-wrapper {
 }
 
 .button{
+    background-color: hotpink;
     border: none;
     color: white;
     padding: 12px 28px;
@@ -283,12 +342,11 @@ body.start #page-header-wrapper {
 }
 
 .button:hover {
-    background-color: #ff3399;
-    color: white;
+    background-color: darkgray;
 }
 
+/*
 .help{
-    background-image: url('/images/background/help-button.png');
     border: none;
     color: white;
     width: 60px;
@@ -299,25 +357,20 @@ body.start #page-header-wrapper {
     display: inline-block;
     font-size: 17px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */ /*
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+} */
 
 .help:hover {
     background-color: #ff3399;
     color: white;
 }
 
-.get-started {
-    background-image: url('/images/background/get-started-button.png');
-    border: none;
-}
-
 /* Specifikationer fÃ¶r att skapa en animation fÃ¶r bakgrundsbilderna*/
 /* https://css-tricks.com/almanac/properties/a/animation/
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-.background{
+/*.background{
 
     -webkit-animation-name: example;
     -webkit-animation-duration: 12s;
@@ -326,27 +379,27 @@ body.start #page-header-wrapper {
 
     animation-name: example;
     animation-duration: 14s; /* Animationens tidsfÃ¶rlopp */
-    animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
-    animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
-}
+    /*animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
+   /* animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
+/* } */
 
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@-webkit-keyframes example {
+/*@-webkit-keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
+}*/
 
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@keyframes example {
+/*@keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
+}*/
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Favorites css stylesheet */
@@ -419,6 +472,7 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 }
 
 /* **************** TEST **************** */
+<<<<<<< HEAD
 
 /*-------------------------------------------------------------------------------------------------*/
 /* image
@@ -524,3 +578,5 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 
 
 
+=======
+>>>>>>> ffc190239defec956b327e1e1061b4545f8838c7
