@@ -1,5 +1,25 @@
 /* app css stylesheet */
 
+.purplesky::after {
+    content: "";
+    background-image: url('images/bakgrund.jpg');
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: repeat; /* ingen upprepande bakgrund */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -44,170 +64,41 @@
 }
 
 
-
-/* Popup container */
-
-/*
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  top: 333px;
-  width: 200px;
-  height: 100px;
-}
-
-/* The actual popup (appears on top) */
-
-/*
-.popup .popuptext {
-  visibility: hidden;
-  margin: auto;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-
-/*
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  right: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent transparent;
-
-}
-
-.popup .background{
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: Black;
-  z-index: 1;
-  /* These three lines are for transparency in all browsers. */
-
-  /*
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-
-/*
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-
-/*@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 0.3;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 0.3;}
-}*/
-
-/* The Modal (background)*/
-
-.modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 
 /* Modal Content/Box */
  .modal-content {
+  z-index: auto;
+  left: 0px;
+  top: 200px;
+  float: inherit;
+  padding: 20px; /* 15% from the top and centered*/
   background-color: #fefefe;
   margin: 100% auto;
+  border: 1px solid #800000;
+  width: 100%; /* Could be more or less, depending on screen size */
+  -webkit-transform: translate(-50%, -50%);
+
    z-index: auto;
 
    float: right;
    padding: 20px; /* 15% from the top and centered*/
 
-
-
-  /* border: 1px solid #800000;
-  width: 50%; /* Could be more or less, depending on screen size -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(0%, 0%);
-  transform: translate(0, -50%);*/
-
-
 }
 
-.popup
-{
-  border-radius: 7px;
-  background:#6b6a63;
-  margin:auto;
-  padding:6px;
-  overflow: auto;
-
-  position:absolute;
-  width:800px;
-  top: 0%;
-  left: 0%;
-  bottom: 0;
-  right: 0;
-  margin-left: -200px;
-  margin-top: -20px;
-
-
-
-   /* height: 50%;
-    /* Set your own height: percents, ems, whatever! */
-/*
-  width: 50%;
-  !* Set your own width: percents, ems, whatever! *!
-
-  overflow: auto;
-  !* Recommended in case content is larger than the container *!
-
-  margin: auto;
-  !* Center the item vertically &amp; horizontally *!
-
-  position: absolute;
-  !* Break it out of the regular flow *!
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  !* Set the bounds in which to center it, relative to its parent/container *!
-
-  background-color: green; */
-}
 
 
 #myBtn {
@@ -218,53 +109,6 @@
 
 }
 
-
-/*
-.Absolute-Center {
-
-  height: 50%;
-    /* Set your own height: percents, ems, whatever! */
-
-/*  width: 50%;
-  /* Set your own width: percents, ems, whatever! */
-
-/*  overflow: auto;
-  /* Recommended in case content is larger than the container */
-/*
-  margin: auto;
-  !* Center the item vertically &amp; horizontally *!
-
-  position: absolute;
-  !* Break it out of the regular flow *!
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  !* Set the bounds in which to center it, relative to its parent/container *!
-
-  background-color: green;
-  }*/
-
-/*.Center-Container {
-  position: relative;
-}
-!* Make sure our center blocks stay in their container! *!
-
-.Absolute-Center.is-Fixed {
-  position: fixed;
-  z-index: 999;
-}
-!* Fixed floating element within viewport *!
-
-.Absolute-Center.is-Responsive {
-  width: 60%;
-  height: 60%;
-  min-width: 200px;
-  max-width: 400px;
-  padding: 40px;
-!* The Close Button *!
-*/
 
 .close {
   color: #aaa;
@@ -341,7 +185,7 @@
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
-
+/*-------------------------------------------------------------------------------------------------*/
 
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
@@ -355,7 +199,8 @@ label > input + img{ /* IMAGE STYLES */
 
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border: 2px solid #f00;
+
+    border: 2px solid #f00;
 }
 
 input[type=text] {
@@ -373,8 +218,31 @@ textarea{
 // Lägg till här
 }
 
+#mood
+{   
+    margin: 18px;
+}
+
+#chooseStyle
+{
+    background-color: lightpink;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
+}
+
+.toggle
+{
+    padding: 10px 55px;
+    font-size: 15px;
+    color: black;
+    background: rgba(0,0,0,0);
+    border: solid 5px black;
+
+}
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
+
 
 .weather-icon {
   height: 50px;
@@ -407,18 +275,8 @@ textarea{
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
-
-
-body.start {
-    background-repeat: no-repeat; /* ingen upprepande bakgrund */
-    background-attachment: fixed; /*  en fastställd bakgrund */
-    background-position: center center; /*  bakgrundens position */
-}
-
-body.start #page-header-wrapper {
-    display: none !important;
-}
-
+/*-------------------------------------------------------------------------------------------------*/
+/*
 body {
     background-attachment: fixed;
     content: ' ';
@@ -437,13 +295,16 @@ body {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-}
+}*/
 
 .moln{
     position: absolute;
     top: 13%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 .center{
@@ -461,9 +322,7 @@ body {
 }
 
 .button{
-    /*
-    background:  #b3b3b3;
-    */
+    background-color: hotpink;
     border: none;
     color: white;
     padding: 12px 28px;
@@ -479,11 +338,11 @@ body {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/*.button:hover {
-    background-color: #ff3399;
-    color: white;
-}*/
+.button:hover {
+    background-color: darkgray;
+}
 
+/*
 .help{
     background-image: url('/images/background/help-button.png');
     border: none;
@@ -496,25 +355,25 @@ body {
     display: inline-block;
     font-size: 17px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */ /*
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+} */
 
-.help:hover {
+.moln:hover {
     background-color: #ff3399;
     color: white;
 }
 
-.get-started {
+/*.get-started {
     background-image: url('/images/background/get-started-button.png');
     border: none;
-}
+}*/
 
 /* Specifikationer fÃ¶r att skapa en animation fÃ¶r bakgrundsbilderna*/
 /* https://css-tricks.com/almanac/properties/a/animation/
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-.background{
+/*.background{
 
     -webkit-animation-name: example;
     -webkit-animation-duration: 12s;
@@ -523,34 +382,27 @@ body {
 
     animation-name: example;
     animation-duration: 14s; /* Animationens tidsfÃ¶rlopp */
-    animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
-    animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
-}
+    /*animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
+   /* animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
+/* } */
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Anpassat fÃ¶r: Chrome, Safari, Opera */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@-webkit-keyframes example {
+/*@-webkit-keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
+}*/
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Standard syntax */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@keyframes example {
+/*@keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
-
+}*/
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Favorites css stylesheet */
@@ -621,3 +473,5 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 {
     opacity: 0.4;
 }
+
+/* **************** TEST **************** */
