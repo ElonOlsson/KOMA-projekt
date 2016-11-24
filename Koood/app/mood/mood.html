@@ -1,16 +1,20 @@
 <!-- AngularJS -->
 <div class="visible-xs" ng-app="myApp.mood" ng-controller="FormCtrl">
-	<p>Let's go!</p>
 	<form name="moodForm" ng-submit="submitForm()">
-        <div class="row text-center">
-			<p>Kön?</p>
-			<br/>
+		    <!-- <div class="row text-center">
+			<a href="http://www.accuweather.com/sv/se/norrkoping/314360/weather-forecast/314360" class="aw-widget-legal"></a>
+			<div id="awcc1479974805461" class="aw-widget-current"  data-locationkey="314360" data-unit="c" data-language="sv" data-useip="false" data-uid="awcc1479974805461"></div>
+			<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script> -->
+		<iframe id="forecast_embed" type="text/html" frameborder="0.5" height="245" width="100%"
+				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping, Sverige&color=#00aaff&font=Arial&units=si"> </iframe>
+
+		<p>Kön?</p>
             <label>
-                <img src="../Koood/app/images/Male.png" height="30" width="30"/>
+                <img src="../Koood/app/images/Male.png" height="30" width="30" id="changer" onclick="changeMale(this)"/>
                 <input type="radio" ng-model="data.gender" value="male" />
             </label>
 			 <label>
-				<img src="../Koood/app/images/Female.png" height="30" width="30"/>
+				<img src="../Koood/app/images/Female.png" height="30" width="30" id="changer" onclick="changeFemale(this)"/>
 				<input type="radio" ng-model="data.gender" value="female" />
 			 </label>
 		</div>
@@ -20,25 +24,22 @@
 				<p>Hur mår du idag?</p>
 				<br/>
 				<label>
-					<img src="../Koood/app/images/happy-512.png" height="30" width="30"/>
+					<img src="../Koood/app/images/happy-512.png" height="30" width="30" id="changer" onclick="changeHappy(this)" />
 					<input type="radio" ng-model="data.currentMood" value="happy">
 				</label>
-
 				<label>
-					<img src="../Koood/app/images/Neutral.png" height="30" width="30"/>
+					<img src="../Koood/app/images/Neutral.png" height="30" width="30" id="changer" onclick="changeNeutral(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="neutral">
 				</label>
-
 				<label>
-					<img src="../Koood/app/images/sad.png" height="30" width="30"/>
+					<img src="../Koood/app/images/sad.png" height="30" width="30" id="changer" onclick="changeSad(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="sad">
 				</label>
-
         </div>
 
 		<br/>
 		<br/>
-
+		
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<button type="button" class="toggle" data-toggle="collapse" data-target="#chooseStyle">
@@ -63,10 +64,7 @@
 			</label>
 		</div>
 		<br/><br/>
-		Dagens prognos
-		<br/>
-		<p>Massa prognoser</p>
-		<input type="submit" ngClick="submitForm">
+		<input type="submit" ngClick="submitForm" onClick="home()">
 	</form>
 </div>
 
@@ -101,3 +99,4 @@
 	</form>
 </div>
  -->
+

@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('myApp.start', ['ngRoute'])
+var start = angular.module('myApp.start', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
+start.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/start', {
     templateUrl: 'app/start/start.html',
     controller: ''  //<--- här lägger ni er controller om ni vill ha någon
