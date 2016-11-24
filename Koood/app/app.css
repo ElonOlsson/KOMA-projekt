@@ -24,6 +24,7 @@ p
 {
     font-family: "Corbel", Times, serif;
     font-size: 20px;
+    margin: -10px;
 }
 
 .menu {
@@ -193,6 +194,13 @@ p
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
+.gender{
+    padding: 20px 0px 10px 0px;
+}
+
+.humor{
+    padding: 10px 0px 0px 0px;
+}
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
