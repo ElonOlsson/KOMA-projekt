@@ -8,3 +8,5 @@ favs.config(['$routeProvider', function($routeProvider) {
         controller: ''
     });
 }])
+
+
