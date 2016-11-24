@@ -341,6 +341,7 @@
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
 
 
 /*Göra radioknapparna osynliga med bilden*/
@@ -375,6 +376,8 @@ textarea{
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
+
 
 .weather-icon {
   height: 50px;
@@ -397,38 +400,24 @@ textarea{
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
 
 
-/*body {
+/*.background {
     font-family: "Times New Roman", Times, serif;
-/*
-    background-image: url("images/background/watercolour-blur.png");
-    background-repeat: repeat; /* ingen upprepande bakgrund */
-    /*background-attachment: fixed; /*  en fastställd bakgrund */
-    /*background-position: center center; /*  bakgrundens position */
-/*}*/
-/*
-.backgroundMain {
     background-image: url("images/background/watercolour-blur.png");
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: float;
     z-index: -1;
-}*/
     background-repeat: no-repeat; /* ingen upprepande bakgrund */
-<<<<<<< HEAD
     /*background-attachment: fixed; /*  en fastställd bakgrund */
-    /*background-position: center center; /*  bakgrundens position */
-/*} */
-=======
-    background-attachment: fixed; /*  en fastställd bakgrund */
-    background-position: center center; /*  bakgrundens position */
-}
+   /* background-position: center center; /*  bakgrundens position */
+/* }*/
 
 body.start #page-header-wrapper {
     display: none !important;
 }
->>>>>>> a0a7b5a1e095454afa394135bed4c37df599e73c
 
 .moln{
     position: absolute;
@@ -452,9 +441,6 @@ body.start #page-header-wrapper {
 }
 
 .button{
-    /*
-    background:  #b3b3b3;
-    */
     border: none;
     color: white;
     padding: 12px 28px;
@@ -470,10 +456,10 @@ body.start #page-header-wrapper {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/*.button:hover {
+.button:hover {
     background-color: #ff3399;
     color: white;
-}*/
+}
 
 .help{
     background-image: url('/images/background/help-button.png');
@@ -518,9 +504,6 @@ body.start #page-header-wrapper {
     animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
 }
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Anpassat fÃ¶r: Chrome, Safari, Opera */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @-webkit-keyframes example {
@@ -530,9 +513,6 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     100% {background-image: url('images/background/bakgrund2.jpg');}
 }
 
-/* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
-	utifrÃ¥n animationens Ã¶kning i procent.
-	Standard syntax */
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @keyframes example {
