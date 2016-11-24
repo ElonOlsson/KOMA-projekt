@@ -15,7 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-
+<div class="backgroundMain">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -28,12 +28,6 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-
-      <!--<div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#!/mood">Humör</a></li>
-          <li><a href="#!/favorties">Favoriter</a></li>
-          <li><a href="#!/basic">Basic</a></li>-->
 
       <div id="menuButton" class= "navbar-collapse collapse">
 
@@ -52,7 +46,7 @@
     </div>
   </nav>
 
-  <div class="container-fluid" ng-view></div>  <!-- Det är här eran sidor ni laddar från routeprovider kommer att hammna, ty ng-view -->
+  <div class="container-fluid" ng-view></div>
 
   <!-- library dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -74,5 +68,6 @@
   <script src="app/favorites/favorites.js"></script>
 
   <!-- end -->
+</div>
 </body>
 </html>

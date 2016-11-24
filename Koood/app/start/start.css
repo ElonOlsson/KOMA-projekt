@@ -95,10 +95,10 @@ body {
 /* https://css-tricks.com/almanac/properties/a/animation/ 
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @-webkit-keyframes example {
-    0%   {background-image: url('../images/bakgrund1.jpg');}
-    33%   {background-image: url('../images/bakgrund2.jpg');}
-    66%  {background-image: url('../images/bakgrund1.jpg');}
-    100% {background-image: url('../images/bakgrund2.jpg');}
+    0%   {background-image: url('../images/background/bakgrund1.jpg');}
+    33%   {background-image: url('../images/background/bakgrund2.jpg');}
+    66%  {background-image: url('../images/background/bakgrund1.jpg');}
+    100% {background-image: url('../images/background/bakgrund2.jpg');}
 }
 
 /* Animationens "rÃ¶relse" under det bestÃ¤mda tidsfÃ¶rloppet,
@@ -107,8 +107,8 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 /* https://css-tricks.com/almanac/properties/a/animation/ 
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 @keyframes example {
-    0%   {background-image: url('../images/bakgrund1.jpg');}
-    33%   {background-image: url('../images/bakgrund2.jpg');}
-    66%  {background-image: url('../images/bakgrund1.jpg');}
-    100% {background-image: url('../images/bakgrund2.jpg');}
+    0%   {background-image: url('../images/background/bakgrund1.jpg');}
+    33%   {background-image: url('../images/background/bakgrund2.jpg');}
+    66%  {background-image: url('../images/background/bakgrund1.jpg');}
+    100% {background-image: url('../images/background/bakgrund2.jpg');}
 }
