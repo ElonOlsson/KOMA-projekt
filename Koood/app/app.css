@@ -423,7 +423,7 @@ body.start #page-header-wrapper {
 .moln{
     position: absolute;
     top: 13%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, -50%);
 }
 
@@ -461,7 +461,7 @@ body.start #page-header-wrapper {
     background-color: #ff3399;
     color: white;
 }
-
+/*
 .help{
     background-image: url('/images/background/help-button.png');
     border: none;
@@ -474,10 +474,10 @@ body.start #page-header-wrapper {
     display: inline-block;
     font-size: 17px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */ /*
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+} */
 
 .help:hover {
     background-color: #ff3399;
