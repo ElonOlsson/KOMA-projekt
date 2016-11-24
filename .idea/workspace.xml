@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dd89e8f-7be0-473a-becd-df1dda53b451" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/pants.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/pants.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/shirt.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/shirt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/shorts.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/shorts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/skirt.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/skirt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/t-shirt.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/t-shirt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/images/clothes/top.png" afterPath="$PROJECT_DIR$/Koood/app/images/clothes/top.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/app.css" afterPath="$PROJECT_DIR$/Koood/app/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/favorites/favorites.html" afterPath="$PROJECT_DIR$/Koood/app/favorites/favorites.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/home/home.html" afterPath="$PROJECT_DIR$/Koood/app/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/mood/mood.html" afterPath="$PROJECT_DIR$/Koood/app/mood/mood.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/outfits/outfits.html" afterPath="$PROJECT_DIR$/Koood/app/outfits/outfits.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/app/start/start.html" afterPath="$PROJECT_DIR$/Koood/app/start/start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Koood/index.html" afterPath="$PROJECT_DIR$/Koood/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +47,8 @@
       <file leaf-file-name="favorites.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koood/app/favorites/favorites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="795">
+              <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -68,18 +57,28 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koood/app/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-307">
-              <caret line="335" column="14" selection-start-line="335" selection-start-column="14" selection-end-line="335" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="-202">
+              <caret line="342" column="14" selection-start-line="342" selection-start-column="14" selection-end-line="342" selection-end-column="14" />
+              <folding>
+                <marker date="1480019412000" expanded="true" signature="44:574" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="578:621" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="629:732" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="747:766" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="780:799" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="854:897" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="970:1004" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="1014:1065" ph="{...}" />
+                <marker date="1480019412000" expanded="true" signature="1118:1285" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Koood/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="495">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -87,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koood/app/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="480">
               <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding />
             </state>
@@ -124,6 +123,7 @@
         <option value="$PROJECT_DIR$/Koood/app/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/Koood/app/outfits/outfits.html" />
         <option value="$PROJECT_DIR$/Koood/app/app.css" />
+        <option value="$PROJECT_DIR$/Koood/index.html" />
       </list>
     </option>
   </component>
@@ -372,12 +372,12 @@
       <option name="presentableId" value="Default" />
       <updated>1479998574936</updated>
       <workItem from="1479998577240" duration="4632000" />
-      <workItem from="1480004115938" duration="8531000" />
+      <workItem from="1480004115938" duration="8847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13163000" />
+    <option name="totallyTimeSpent" value="13479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="42" width="1260" height="662" extended-state="0" />
@@ -440,7 +440,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480019412000" expanded="true" signature="44:574" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="578:621" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="629:732" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="747:766" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="780:799" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="854:897" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="970:1004" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="1014:1065" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="1118:1285" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,14 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Koood/app/mood/mood.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Koood/app/start/start.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -480,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Koood/app/favorites/favorites.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        <state relative-caret-position="795">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -496,27 +498,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Koood/app/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307">
-          <caret line="335" column="14" selection-start-line="335" selection-start-column="14" selection-end-line="335" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Koood/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="-202">
+          <caret line="342" column="14" selection-start-line="342" selection-start-column="14" selection-end-line="342" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1480019412000" expanded="true" signature="44:574" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="578:621" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="629:732" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="747:766" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="780:799" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="854:897" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="970:1004" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="1014:1065" ph="{...}" />
+            <marker date="1480019412000" expanded="true" signature="1118:1285" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Koood/app/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="480">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koood/app/mood/mood.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koood/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
