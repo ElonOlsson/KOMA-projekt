@@ -1,7 +1,19 @@
 /* app css stylesheet */
+#mySidenav{
+
+}
 
 .backgroundMain{
-    padding-top: 70px;
+   /* padding-top: 70px;*/
+}
+
+.w3-container{
+    width: 100%;
+    height: 50px;
+}
+
+.w3-opennav{
+    float: right;
 }
 .purplesky::after {
     content: "";
@@ -73,8 +85,8 @@ p{
 #menuButton{
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
     padding: 0 0 0 30px;
+    font-size: 10px;
 }
-
 
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet */
@@ -93,7 +105,6 @@ p{
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
 
 /* Modal Content/Box */
  .modal-content {
