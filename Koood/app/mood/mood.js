@@ -29,7 +29,7 @@ mood.config(['$routeProvider', function($routeProvider) {
 }])
 
 function changeHappy(elementHappy) {
-	elementHappy.src = elementHappy.bln ? "../Koood/app/images/happy_white.png" : "../Koood/app/images/happy_white.png";
+	elementHappy.src = elementHappy.bln ? "../Koood/app/images/smile (1).png" : "../Koood/app/images/happy_white.png";
 	elementHappy.bln = !elementHappy.bln;  /* assigns opposite boolean value always */
 }
 
@@ -52,32 +52,6 @@ function changeFemale(elementFemale) {
 	elementFemale.bln = !elementFemale.bln;  /* assigns opposite boolean value always */
 }
 
-
-/*
-function changeImage(element){
-	if(element.src = element.bln ? "../Koood/app/images/happy-512.png")
-	{
-		element.src = element.bln ? "../Koood/app/images/sad.png" : "../Koood/app/images/sad.png";
-		element.src = element.bln ? "../Koood/app/images/Neutral.png" : "../Koood/app/images/Neutral.png";
-		element.src = element.bln ? "../Koood/app/images/happy-512.png" : "../Koood/app/images/happy_grey.png";
-		element.bln = !element.bln;
-	}
-	if(element.src = element.bln ? "../Koood/app/images/sad.png")
-	{
-		element.src = element.bln ? "../Koood/app/images/sad.png" : "../Koood/app/images/sad_grey.png";
-		element.src = element.bln ? "../Koood/app/images/Neutral.png" : "../Koood/app/images/Neutral.png";
-		element.src = element.bln ? "../Koood/app/images/happy-512.png" : "../Koood/app/images/happy-512.png";
-		element.bln = !element.bln;
-	}
-
-	if(element.src = element.bln ? "../Koood/app/images/Neutral.png")
-	{
-		element.src = element.bln ? "../Koood/app/images/sad.png" : "../Koood/app/images/sad.png";
-		element.src = element.bln ? "../Koood/app/images/Neutral.png" : "../Koood/app/images/Neutral_grey.png";
-		element.src = element.bln ? "../Koood/app/images/happy-512.png" : "../Koood/app/images/happy-512.png";
-		element.bln = !element.bln;
-	}
-} */
 
 function home() {
         window.location = "#!/home";
