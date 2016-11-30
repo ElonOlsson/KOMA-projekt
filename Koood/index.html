@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Klädkris</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Klädkris</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="app/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  </head>
 
-    
+  <body class="purplesky">
+    <div class="backgroundMain">
 
-  <!--
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" />
-  -->
+      <nav class="w3-sidenav" style="display:none; background-color: rgba(255, 255, 255, 0.7);" id="mySidenav">
+        <a href="javascript:void(0)"
+           onclick="w3_close()"
+           class="w3-closenav w3-medium"> &times;</a>
+        <div id="menuButton" class= "navbar-collapse collapse">
+          <ul class= "nav navbar-nav">
+            <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
+              <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a></li>
+            <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
+              <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
+            <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
+              <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a></li>
+          </ul>
+        </div>
+      </nav>
 
   <link rel="stylesheet" href="app/app.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-<div class="backgroundMain">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#!/home">
-        <img class="logo" src="app/images/logo-watercolour.png" alt="Klädkris" style="float:left";></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuButton">
-          <span onclick="openNav()"></span>
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
 
       <div id="menuButton" class= "navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -51,30 +52,67 @@
     </div>
   </nav>
 
-  <div class="container-fluid" ng-view></div>
+      <div id="main">
 
-  <!-- library dependencies -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
-  <!-- end -->
-
-  <!-- angular modules -->
-  <script src="app/app.js"></script>
-  <script src="app/home/home.js"></script>
-  <script src="app/mood/mood.js"></script>
-  <script src="app/basic/basic.js"></script>
-  <script src="app/start/start.js"></script>
-  <script src="app/outfits/outfits.js"></script>
-  <script src="app/favorites/favorites.js"></script>
-
-  <!-- end -->
+        <header class="w3-container" style=" background-color: rgba(255, 255, 255, 0.7);">
+          <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+          <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
+            <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:left";></a>
+          </button>
+        </header>
 
 
-</div>
-</body>
+     <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
+            <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:left";></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuButton">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="menuButton" class= "navbar-collapse collapse">
+            <ul class= "nav navbar-nav">
+              <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
+                <img src="app/images/heart.png" height="25" width="25"/> Favoriter</a></li>
+              <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
+                <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
+              <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
+                <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+      <div class="container-fluid" ng-view></div>
+
+      <!-- library dependencies -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
+
+      <!-- end -->
+
+      <!-- angular modules -->
+      <script src="app/app.js"></script>
+      <script src="app/home/home.js"></script>
+      <script src="app/mood/mood.js"></script>
+      <script src="app/basic/basic.js"></script>
+      <script src="app/start/start.js"></script>
+      <script src="app/outfits/outfits.js"></script>
+      <script src="app/favorites/favorites.js"></script>
+
+      <!-- end -->
+
+
+    </div>
+  </body>
 </html>

@@ -1,19 +1,17 @@
 <div class="container_center">
 	<div class="weather-forecast">
-		<div class="col-xs-2"><img class="weather-icon" src="../Koood/app/images/weather-icon-sun-rain.png"/></div>
-		<div class="col-xs-8">20 C <br />
-		Soligt med risk för regn.</div>
-		<div class="col-xs-2">!!!</div>
+		<iframe class="col-xs-8" id="forecast_embed" type="text/html" frameborder="0" height="128" width="190"
+				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping&color=#00aaff&font=Arial&units=si"> </iframe>
 		<!--
 		ng-app="myApp.home" ng-controller="popoverCtrl"
 		<div  ng-mouseover="showPopover()" ng-mouseleave="hidePopover()" class="col-xs-2">!!!</div>
 		<div class="popover" ng-show="popoverIsVisible">Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</div>
 		-->
 	</div>
-	<div class="outfitCarousel col-xs-12">
+	<div class="outfitCarousel col-xs-12 col-md-8 col-lg-8">
 		<div class="topCarousel  ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
-			<div ng-controller="CarouselCtrl" id="slides_control_top" class="ng-scope">
+			<div ng-controller="CarouselCtrl" class="slides_control_top">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_top in items_top" index="$index">
 						<img id="imgTopCarousel" ng-src="{{item_top.imgSrc}}" >
@@ -24,13 +22,19 @@
 		</div>
 		<div class="bottomCarousel ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
-			<div ng-controller="CarouselCtrl" id="slides_control_bottom">
+			<div ng-controller="CarouselCtrl" class="slides_control_bottom">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
-						<img id="imgTopCarousel" ng-src="{{item_bottom.imgSrc}}">
+						<div id="imagesButtom">
+							<!--<img src="app/images/heart-gray.png" id="imgHeart">-->
+							<img id="imgTopCarousel" ng-src="{{item_bottom.imgSrc}}" id="imgButtom">
+						</div>
 					</uib-slide>
 				</uib-carousel>
 			</div>
 		</div>
+	</div>
+	<div class= "outfit">
+		<a href="#!/outfits"><button type="button" class="button">Välj Outfit!</button></a>
 	</div>
 </div>

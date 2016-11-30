@@ -1,4 +1,45 @@
 /* app css stylesheet */
+#mySidenav{
+
+}
+
+.backgroundMain{
+   /* padding-top: 70px;*/
+}
+
+.w3-container{
+    width: 100%;
+    height: 60px;
+}
+
+.w3-opennav{
+    float: right;
+    margin-top: 10px;
+}
+.purplesky::after {
+    content: "";
+    background-image: url('images/bakgrund.jpg');
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: repeat; /* ingen upprepande bakgrund */
+    background-attachment: fixed; /*  en fastställd bakgrund */
+    background-position: center center; /*  bakgrundens position */
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+p{
+    font-size: 20px;
+    margin: -10px;
+}
 
 .menu {
   list-style: none;
@@ -32,33 +73,41 @@
 .logo {
   height: 40px;
   width: 65px;
+
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-brand {
-  padding: 5px 15px;
+    padding: 5px 15px;
 }
 
 #menuButton{
-    position: absolute;
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
+    padding: 0 0 0 30px;
+    font-size: 10px;
 }
 
+/*-------------------------------------------------------------------------------------------------*/
+/* popup stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
 
 #myModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
 
 /* Modal Content/Box */
  .modal-content {
@@ -73,23 +122,14 @@
   width: 100%; /* Could be more or less, depending on screen size */
   -webkit-transform: translate(-50%, -50%);
 
-   z-index: auto;
-
-   float: right;
-   padding: 20px; /* 15% from the top and centered*/
-
+ /* 15% from the top and centered*/
 }
 
-
-
 #myBtn {
-
   position: absolute;
   margin-left: 100px;
   margin-top: 200px;
-
 }
-
 
 .close {
   color: #aaa;
@@ -113,8 +153,9 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
-
+.modal-body {
+    padding: 2px 16px;
+}
 
 /* Modal Footer */
   .modal-footer {
@@ -124,8 +165,7 @@
 }
 
 /* Modal Content */
-
-  .modal-content {
+.modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -137,36 +177,145 @@
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
-
-  @-webkit-keyframes animatetop {
+@-webkit-keyframes animatetop {
   from {
     top: -500px;
-    opacity: 0}
+    opacity: 0;}
 
   to {
     top: 0;
-    opacity: 1}
+    opacity: 1;}
 }
 
 @keyframes animatetop {
   from {
     top: -300px;
-    opacity: 0
+    opacity: 0;
   }
   to {
     top: 0;
-    opacity: 1
+    opacity: 1;
   }
-
 }
+
+
+/*-------------------------------------------------------------------------------------------------*/
+/* image
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Style the Image Used to Trigger the Modal */
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 100px;
+    right: 45px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
+
+.gender{
+    padding: 20px 0px 10px 0px;
+}
+
+.humor{
+    padding: 20px 0px 0px 0px;
+}
+
+.row{
+    font-family: "Corbel", Times, serif;
+}
 
 /*Göra radioknapparna osynliga med bilden*/
 label > input{ /* HIDE RADIO */
@@ -180,81 +329,155 @@ label > input + img{ /* IMAGE STYLES */
 
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border: 2px solid #f00;
+
+    border: 2px solid #f00;
 }
 
 input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    background-color: #555555;
-    color: white;
-    padding: 10px 24px;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 6px;
+    padding: 10px 55px;
     font-size: 15px;
+    color: black;
+    background: rgba(0,0,0,0);
+    border: solid 5px black;
 }
 textarea{
 // Lägg till här
 }
 
-#chooseStyle
-{
-    background-color: lightsteelblue;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+#mood
+{   
+    margin: 18px;
 }
 
+#chooseStyle
+{
+    background: rgba(0,0,0,0.1);
+    opacity: 3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding: 12px 16px;*/
+}
 
+.toggle
+{
+    padding: 10px 55px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    background: rgba(0,0,0,0);
+
+}
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-
-.weather-icon {
-  height: 50px;
-  width: 50px;
-}
-
-.outfitCarousel {
+div.outfitCarousel {
     padding: 20px;
+    margin: auto;
+    display: table;
 }
 
-#slides_control_top {
-    padding-bottom: 10px;
+@media (max-width: 768px) {
+    .outfitCarousel {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .outfitCarousel {
+        width: 800px;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.slides_control_top, .slides_control_bottom {
+    display: inline-block;
+    border: 2px solid #FAFAFA;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    -webkit-column-break-inside: avoid;
+    padding: 15px 15px 5px 15px;
+    background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+
 }
 
 #imgTopCarousel, #imgBottomCarousel {
-    height: 150px;
+    height: 140px;
     overflow: hidden;
     margin:auto;
+}
+
+#imgButtom {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.carousel-control {
+    top: 50%;
+    width: auto;
+    height: 0em;
+    background: transparent;
+}
+
+.outfit{
+    position:absolute;
+    left:45%;
+    top:98%;
+}
+
+@media (max-width: 768px) {
+    .outfit {
+        position:absolute;
+        left:30%;
+        top:88%;
+    }
+}
+
+@media (min-width: 768px) {
+    .outfit {
+        position:absolute;
+        left:45%;
+        top:98%;
+    }
 }
 
 /*-------------------------------------------------------------------------------------------------*/
 /* Start css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-
-/*.background {
-    font-family: "Times New Roman", Times, serif;
-    background-image: url("images/background/watercolour-blur.png");
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    position: float;
-    z-index: -1;
-    background-repeat: no-repeat; /* ingen upprepande bakgrund */
-    /*background-attachment: fixed; /*  en fastställd bakgrund */
-   /* background-position: center center; /*  bakgrundens position */
-/* }*/
-
-body.start #page-header-wrapper {
-    display: none !important;
-}
-
-.moln{
+.help {
     position: absolute;
     top: 13%;
     left: 85%;
     transform: translate(-50%, -50%);
+}
+
+.helpme{
+    background-image: url('images/question.png');
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.8;
+    border: none;
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .center{
@@ -272,57 +495,28 @@ body.start #page-header-wrapper {
 }
 
 .button{
+    background-image: url('images/bakgrund.jpg');
+    background-position: center center; /*  bakgrundens position */
+    background-size: cover;
+    opacity: 0.8;
     border: none;
     color: white;
     padding: 12px 28px;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
+    font-family: "Corbel", Times, serif;
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.button:hover {
-    background-color: #ff3399;
-    color: white;
-}
-/*
-.help{
-    background-image: url('/images/background/help-button.png');
-    border: none;
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */ /*
-    transition-duration: 0.4s;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-} */
-
-.help:hover {
-    background-color: #ff3399;
-    color: white;
-}
-
-.get-started {
-    background-image: url('/images/background/get-started-button.png');
-    border: none;
 }
 
 /* Specifikationer fÃ¶r att skapa en animation fÃ¶r bakgrundsbilderna*/
 /* https://css-tricks.com/almanac/properties/a/animation/
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-.background{
+/*.background{
 
     -webkit-animation-name: example;
     -webkit-animation-duration: 12s;
@@ -331,31 +525,38 @@ body.start #page-header-wrapper {
 
     animation-name: example;
     animation-duration: 14s; /* Animationens tidsfÃ¶rlopp */
-    animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
-    animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
-}
+    /*animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
+   /* animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
+/* } */
 
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@-webkit-keyframes example {
+/*@-webkit-keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
+}*/
 
 /* https://css-tricks.com/almanac/properties/a/animation/
 https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-@keyframes example {
+/*@keyframes example {
     0%   {background-image: url('images/background/bakgrund1.jpg');}
     33%  {background-image: url('images/background/bakgrund2.jpg');}
     66%  {background-image: url('images/background/bakgrund1.jpg');}
     100% {background-image: url('images/background/bakgrund2.jpg');}
-}
+}*/
 
 /*-------------------------------------------------------------------------------------------------*/
-/* Favorites css stylesheet */
+/* Favorites & Outfits css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
+
+.rubrik{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 15%;
+    transform: translate(15%, -70%);
+}
 
 #wrapper {
     width: 90%;
@@ -417,10 +618,3 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
         column-count: 4;
     }
 }
-
-#columns:hover .pin:not(:hover)
-{
-    opacity: 0.4;
-}
-
-/* **************** TEST **************** */
