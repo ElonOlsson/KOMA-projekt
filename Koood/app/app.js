@@ -20,8 +20,8 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
 }]);
 
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "35%";
-  document.getElementById("mySidenav").style.width = "35%";
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidenav").style.width = "25%";
   document.getElementById("mySidenav").style.display = "block";
   document.getElementById("openNav").style.display = 'none';
 }
