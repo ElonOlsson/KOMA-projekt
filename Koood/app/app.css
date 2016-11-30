@@ -3,6 +3,10 @@
 
 }
 
+.container-fluid{
+    margin-bottom: 20px;
+}
+
 .backgroundMain{
    /* padding-top: 70px;*/
 }
@@ -374,31 +378,35 @@ textarea{
 // Lägg till här
 }
 
-#mood
-{   
+#mood {
     margin: 18px;
 }
 
-#chooseStyle
-{
+#chooseStyle {
     background: rgba(0,0,0,0.1);
     opacity: 3;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /*padding: 12px 16px;*/
 }
 
-.toggle
-{
+.toggle {
     padding: 10px 55px;
     font-size: 15px;
     color: black;
     border: none;
     background: rgba(0,0,0,0);
-
 }
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
+
+.tips {
+    position: absolute;
+    top: 20%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
 
 div.outfitCarousel {
     padding: 20px;
@@ -438,7 +446,6 @@ div.outfitCarousel {
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-
 }
 
 #imgTopCarousel, #imgBottomCarousel {
