@@ -23,9 +23,10 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class=navbar-brand" href="#!/home">
+        <a class="navbar-brand" href="#!/home">
         <img class="logo" src="app/images/logo-watercolour.png" alt="Klädkris" style="float:left";></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuButton">
+          <span onclick="openNav()"></span>
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -33,9 +34,9 @@
         </button>
       </div>
 
-      <div id="menuButton" class= "navbar-collapse collapse">
 
-        <ul class= "nav navbar-nav">
+      <div id="menuButton" class= "navbar-collapse collapse">
+        <ul class="nav navbar-nav">
           <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
             <img src="app/images/settings (1).png" height="25" width="25"/> Humör</a></li>
           <li><a href="#!/favorties" data-toggle="collapse" data-target="#menuButton">
@@ -46,6 +47,7 @@
             <img src="app/images/cloudy.png" height="25" width="25"/> Basic</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
