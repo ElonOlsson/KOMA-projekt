@@ -1,5 +1,21 @@
 /* app css stylesheet */
+#mySidenav{
 
+}
+
+.backgroundMain{
+   /* padding-top: 70px;*/
+}
+
+.w3-container{
+    width: 100%;
+    height: 60px;
+}
+
+.w3-opennav{
+    float: right;
+    margin-top: 10px;
+}
 .purplesky::after {
     content: "";
     background-image: url('images/bakgrund.jpg');
@@ -20,8 +36,7 @@
     -webkit-background-size: cover;
 }
 
-p
-{
+p{
     font-size: 20px;
     margin: -10px;
 }
@@ -58,6 +73,8 @@ p
 .logo {
   height: 40px;
   width: 65px;
+
+    margin-top: 10px;
 }
 
 .navbar {
@@ -65,20 +82,238 @@ p
 }
 
 .navbar-brand {
-  padding: 5px 15px;
+    padding: 5px 15px;
 }
 
 #menuButton{
-    position: absolute;
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
+    padding: 0 0 0 30px;
+    font-size: 10px;
 }
 
 
+
+/*-------------------------------------------------------------------------------------------------*/
+/* popup stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
+
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+
+}
+
+/* Modal Content/Box */
+ .modal-content {
+  z-index: auto;
+  left: 0px;
+  top: 200px;
+  float: inherit;
+  padding: 20px; /* 15% from the top and centered*/
+  background-color: #fefefe;
+  margin: 100% auto;
+  border: 1px solid #800000;
+  width: 100%; /* Could be more or less, depending on screen size */
+  -webkit-transform: translate(-50%, -50%);
+
+ /* 15% from the top and centered*/
+}
+
+#myBtn {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+ .modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Footer */
+  .modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -500px;
+    opacity: 0;}
+
+  to {
+    top: 0;
+    opacity: 1;}
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------*/
+/* image
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Style the Image Used to Trigger the Modal */
+/*
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+/*
+.modal {
+    display: none; /* Hidden by default */
+/*    position: fixed; /* Stay in place */
+/*    z-index: 1; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+/*   left: 0;
+/*    top: 0;
+/*    width: 100%; /* Full width */
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0,0,0); /* Fallback color */
+ /*   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/*
+/*}
+
+/* Modal Content (Image) */
+/*
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/*
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+/*
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
+}
+
+/* The Close Button */
+/*
+.close {
+    position: absolute;
+    top: 100px;
+    right: 45px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+/* 100% Image Width on Smaller Screens *//*
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+*/
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
-
 
 .gender{
     padding: 20px 0px 10px 0px;
@@ -90,10 +325,6 @@ p
 
 .row{
     font-family: "Corbel", Times, serif;
-}
-
-row text-center{
-
 }
 
 /*Göra radioknapparna osynliga med bilden*/
@@ -158,7 +389,6 @@ div.outfitCarousel {
     margin: auto;
     display: table;
 }
-
 
 @media (max-width: 768px) {
     .outfitCarousel {
@@ -397,6 +627,7 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
         -moz-column-count: 4;
         column-count: 4;
     }
+<<<<<<< HEAD
 }
 
 #columns:hover .pin:not(:hover)
