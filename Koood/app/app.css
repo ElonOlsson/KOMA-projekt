@@ -20,6 +20,16 @@
     float: right;
     margin-top: 10px;
 }
+
+#myContainer {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#mySidenav {
+    display:none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .purplesky::after {
     content: "";
     background-image: url('images/bakgrund.jpg');
@@ -77,8 +87,8 @@ p{
 .logo {
   height: 40px;
   width: 65px;
-
     margin-top: 10px;
+    float: left;
 }
 
 .navbar {
@@ -438,12 +448,6 @@ div.outfitCarousel {
     margin:auto;
 }
 
-#imgButtom {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
-
 .carousel-control {
     top: 50%;
     width: auto;
@@ -572,21 +576,21 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(90%, -70%);
+    transform: translate(23%, -70%);
 }
 
 .rubrik_favorite{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(200%, -70%);
+    /*transform: translate(70%, -70%);*/
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(150%, -70%);
+    transform: translate(50%, -70%);
 }
 
 h1{
@@ -621,8 +625,7 @@ h1{
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
-    padding: 15px;
-    padding-bottom: 5px;
+    padding: 15px 15px 5px 15px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
     opacity: 1;
 
@@ -653,7 +656,6 @@ h1{
         -moz-column-count: 4;
         column-count: 4;
     }
-<<<<<<< HEAD
 }
 
 #columns:hover .pin:not(:hover)
