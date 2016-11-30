@@ -551,11 +551,30 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 /* Favorites & Outfits css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-.rubrik{
+.rubrik_saved{
     font-family: "Corbel", Times, serif;
     position: absolute;
-    top: 15%;
-    transform: translate(15%, -70%);
+    top: 6%;
+    transform: translate(90%, -70%);
+}
+
+.rubrik_favorite{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(200%, -70%);
+}
+
+.rubrik_settings{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(150%, -70%);
+}
+
+h1{
+    font-size: medium;
+    text-align: center;
 }
 
 #wrapper {
