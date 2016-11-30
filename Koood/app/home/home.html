@@ -1,13 +1,34 @@
 <div class="container_center">
-	<div class="weather-forecast">
+	<div class="weather-forecast col-xs-9">
 		<iframe id="forecast_embed" type="text/html" frameborder="0" height="128" width="190"
 				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping&color=#00aaff&font=Arial&units=si"> </iframe>
-		<!--
-		ng-app="myApp.home" ng-controller="popoverCtrl"
-		<div  ng-mouseover="showPopover()" ng-mouseleave="hidePopover()" class="col-xs-2">!!!</div>
-		<div class="popover" ng-show="popoverIsVisible">Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</div>
-		-->
 	</div>
+	<div class="tips col-xs-3">
+		<button type="button" class="helpme"></button>
+	</div>
+	<!--
+		<button id="myBtn">Open Modal</button>
+		<div id="myModal" class="modal">
+
+			&lt;!&ndash; Modal content &ndash;&gt;
+			<div class="modal-content">
+
+				<span class="close">X</span>
+
+				<a href="default.asp">
+					<img src="app/images/heart.png" alt="Heart" style="float:left; width:42px; height:42px;">
+				</a>
+
+				<img src="app/images/basic_shirt_trans.png" alt="Basic Shirt" style="float:center;width:254px;height:178px;">
+
+				<div class = "text">
+					<p> "Här kan det stå lite om plagget" </p>
+				</div>
+
+			</div>
+
+		</div>
+	-->
 	<div class="outfitCarousel col-xs-12 col-md-8 col-lg-8">
 		<div class="topCarousel  ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
