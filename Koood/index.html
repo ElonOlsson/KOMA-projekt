@@ -15,56 +15,20 @@
   <body class="purplesky">
     <div class="backgroundMain">
 
-     <!-- <nav class="w3-sidenav" style="display:none; background-color: rgba(255, 255, 255, 0.7);" id="mySidenav">
-        <a href="javascript:void(0)"
-           onclick="w3_close()"
-           class="w3-closenav w3-medium"> &times;</a>
-        <div id="menuButton" class= "navbar-collapse collapse">
-          <ul class= "nav navbar-nav">
-            <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a></li>
-            <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
-            <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a></li>
-          </ul>
-        </div>
-      </nav>
-
-        <header class="w3-container" style=" background-color: rgba(255, 255, 255, 0.7);">
-            <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-            <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
-                <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:left";></a>
-            </button>
-        </header> -->
-
-
         <header class="w3-container" style="background-color: rgba(255, 255, 255, 0.7);">
-            <span class="w3-opennav w3-xlarge w3-left" onclick="w3_open()" id="openNav">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openNavigation()" id="openNav">&#9776;</span>
+            <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
+                <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:right";></a>
         </header>
 
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">Favoriter</a>
+            <a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">Outfits</a>
+            <a href="#!/mood" data-toggle="collapse" data-target="#menuButton">Inställningar</a>
+        </div>
 
-        <nav class="w3-sidenav w3-white w3-card-2" style="background-color: rgba(255, 255, 255, 0.7);" id="mySidenav">
-            <a href="javascript:void(0)"
-               onclick="w3_close()"
-               class="w3-closenav w3-large">Close &times;</a>
-            <a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
-                <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a>
-            <a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
-                <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a>
-            <a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
-                <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a>
-        </nav>
-
-
-    <div id="meny">
-
-    </div>
-
-
-
-        <!-- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push_opacity
-        http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidenav_shift -->
+    <div id="main">
 
      <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -110,7 +74,6 @@
       <script src="app/home/home.js"></script>
       <script src="app/mood/mood.js"></script>
       <script src="app/basic/basic.js"></script>
-      <script src="app/start/start.js"></script>
       <script src="app/outfits/outfits.js"></script>
       <script src="app/favorites/favorites.js"></script>
       <!-- end -->

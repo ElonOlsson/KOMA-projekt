@@ -1,7 +1,8 @@
 .purplesky::after {
-    content: "";
-    background-image: url('bakgrund.jpg');
     opacity: 0.5;
+}
+
+.purplesky {
     top: 0;
     right: 0;
     position: fixed;
@@ -16,6 +17,28 @@
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+    background-image: url("bakgrund.jpg");
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-image: url("bakgrund.jpg");}
+    25%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    50%  {background-image: url("bakgrund.jpg");}
+    100% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-image: url("bakgrund.jpg");}
+    25%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    50%  {background-image: url("bakgrund.jpg");}
+    100% {background-image: url("../koood/app/images/bakgrund2.jpg");}
 }
 
 .help {
