@@ -19,26 +19,40 @@
     -webkit-background-size: cover;
     background-image: url("bakgrund.jpg");
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   {background-image: url("bakgrund.jpg");}
-    25%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    10%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    20%  {background-image: url("bakgrund.jpg");}
+    20% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    30%  {background-image: url("bakgrund.jpg");}
+    40%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
     50%  {background-image: url("bakgrund.jpg");}
-    100% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    60% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    70%  {background-image: url("bakgrund.jpg");}
+    80% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    90%  {background-image: url("bakgrund.jpg");}
 }
 
 /* Standard syntax */
 @keyframes example {
     0%   {background-image: url("bakgrund.jpg");}
-    25%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    10%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    20%  {background-image: url("bakgrund.jpg");}
+    20% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    30%  {background-image: url("bakgrund.jpg");}
+    40%  {background-image: url("../koood/app/images/bakgrund2.jpg");}
     50%  {background-image: url("bakgrund.jpg");}
-    100% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    60% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    70%  {background-image: url("bakgrund.jpg");}
+    80% {background-image: url("../koood/app/images/bakgrund2.jpg");}
+    90%  {background-image: url("bakgrund.jpg");}
 }
 
 .help {
