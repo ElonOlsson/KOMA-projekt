@@ -12,30 +12,36 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
 
+
   <body class="purplesky">
     <div class="backgroundMain">
 
-      <nav class="w3-sidenav" style="display:none; background-color: rgba(255, 255, 255, 0.7);" id="mySidenav">
-        <a href="javascript:void(0)"
-           onclick="w3_close()"
-           class="w3-closenav w3-medium"> &times;</a>
-        <div id="menuButton" class= "navbar-collapse collapse">
-          <ul class= "nav navbar-nav">
-            <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a></li>
-            <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
-            <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a></li>
-          </ul>
-        </div>
-      </nav>
+
+              <nav class="w3-sidenav" style="display:none; background-color: rgba(255, 255, 255, 0.7);" id="mySidenav">
+                <a href="javascript:void(0)"
+                   onclick="w3_close()"
+                   class="w3-clav w3-medium"> &times;</a>
+
+
+                <div id="menuButton" class= "navbar-collapse collapse">
+                  <ul class= "nav navbar-nav">
+                    <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
+                      <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a></li>
+                    <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
+                      <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
+                    <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
+                      <img src="app/images/settings(1).png" height="25" width="25"/> Inställningar</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>-->
 
   <link rel="stylesheet" href="app/app.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-</head>
-<body>
 
+
+
+<nav>
       <div id="menuButton" class= "navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
@@ -49,20 +55,19 @@
         </ul>
       </div>
 
-    </div>
   </nav>
 
-      <div id="main">
+ <div id="main">
+          <header class="w3-container" style=" background-color: rgba(255, 255, 255, 0.7);">
+              <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+              <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
+                  <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:left";></a>
+              </button>
+          </header>
+      </div>
 
-        <header class="w3-container" style=" background-color: rgba(255, 255, 255, 0.7);">
-          <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-          <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
-            <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:left";></a>
-          </button>
-        </header>
 
-
-     <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
@@ -86,9 +91,8 @@
             </ul>
           </div>
         </div>
-      </nav> -->
-
-      <div class="container-fluid" ng-view></div>
+      </nav>
+ <div class="container-fluid" ng-view></div>
 
       <!-- library dependencies -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
