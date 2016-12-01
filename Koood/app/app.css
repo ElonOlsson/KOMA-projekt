@@ -669,8 +669,7 @@ h1{
         -moz-column-count: 4;
         column-count: 4;
     }
-<<<<<<< HEAD
-=======
+
 }
 
 #columns:hover .pin:not(:hover)
@@ -847,7 +846,6 @@ h1{
     from {transform:scale(0)}
     to {transform:scale(0)}
 }
->>>>>>> 0dad64d31f06a5d4430f3b67622047d37be6d4be
 
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
