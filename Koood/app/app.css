@@ -3,6 +3,10 @@
 
 }
 
+.container-fluid{
+    margin-bottom: 20px;
+}
+
 .backgroundMain{
    /* padding-top: 70px;*/
 }
@@ -100,6 +104,75 @@ p{
 
 
 /*-------------------------------------------------------------------------------------------------*/
+/* image
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Style the Image Used to Trigger the Modal */
+/*
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+/*
+.modal {
+    display: none; /* Hidden by default */
+/*    position: fixed; /* Stay in place */
+/*    z-index: 1; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+/*   left: 0;
+/*    top: 0;
+/*    width: 100%; /* Full width */
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0,0,0); /* Fallback color */
+ /*   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/*
+/*}
+
+/* Modal Content (Image) */
+/*
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/*
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+/*
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+>>>>>>> 33ef8615ab5f0444dcc685de91bdd52d88a97874
+
+
+/*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -135,42 +208,64 @@ input[type=text] {
 // Lägg till här
 }
 input[type=submit] {
-    border-radius: 6px;
+
+    background-image: url('images/bakgrund.jpg');
+    background-position: center center; /*  bakgrundens position */
+    background-size: cover;
+    opacity: 0.8;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Corbel", Times, serif;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+   /* border-radius: 6px;
     padding: 10px 55px;
     font-size: 15px;
     color: black;
     background: rgba(0,0,0,0);
-    border: solid 5px black;
+    border: solid 5px black; */
 }
 textarea{
 // Lägg till här
 }
 
-#mood
-{   
+#mood {
     margin: 18px;
 }
 
-#chooseStyle
-{
+#chooseStyle {
     background: rgba(0,0,0,0.1);
     opacity: 3;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /*padding: 12px 16px;*/
 }
 
-.toggle
-{
+.toggle {
     padding: 10px 55px;
     font-size: 15px;
     color: black;
     border: none;
     background: rgba(0,0,0,0);
-
 }
+
 /*-------------------------------------------------------------------------------------------------*/
 /* Home css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
+
+.tips {
+    position: absolute;
+    top: 20%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
 
 div.outfitCarousel {
     padding: 20px;
@@ -210,7 +305,6 @@ div.outfitCarousel {
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-
 }
 
 #imgTopCarousel, #imgBottomCarousel {
@@ -349,11 +443,30 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 /* Favorites & Outfits css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-.rubrik{
+.rubrik_saved{
     font-family: "Corbel", Times, serif;
     position: absolute;
-    top: 15%;
-    transform: translate(15%, -70%);
+    top: 6%;
+    transform: translate(90%, -70%);
+}
+
+.rubrik_favorite{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(200%, -70%);
+}
+
+.rubrik_settings{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(150%, -70%);
+}
+
+h1{
+    font-size: medium;
+    text-align: center;
 }
 
 #wrapper {
@@ -738,20 +851,7 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
         top: 0;
         opacity: 1
     }
+
+
 }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*

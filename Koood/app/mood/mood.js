@@ -29,7 +29,7 @@ mood.config(['$routeProvider', function($routeProvider) {
 }])
 
 function changeHappy(elementHappy) {
-	elementHappy.src = elementHappy.bln ? "../Koood/app/images/smile (1).png" : "../Koood/app/images/happy_white.png";
+	elementHappy.src = elementHappy.bln ? "../Koood/app/images/smile.png" : "../Koood/app/images/happy_white.png";
 	elementHappy.bln = !elementHappy.bln;  /* assigns opposite boolean value always */
 }
 
