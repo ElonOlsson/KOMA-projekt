@@ -222,7 +222,7 @@ p{
     animation-name: zoom;
     animation-duration: 0.2s;
 }
->>>>>>> 33ef8615ab5f0444dcc685de91bdd52d88a97874
+
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -470,6 +470,13 @@ div.outfitCarousel {
     transform: translate(50%, 50%);
 }
 
+.rubrik_outfit{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(210%, -70%);
+}
+
 h1{
     font-size: small;
     text-align: center;
@@ -660,14 +667,11 @@ h1{
 /* Modal Content
 .modal-content
 {
-
-<<<<<<< HEAD
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
 }
-=======
 }*/
 
 /* 100% Image Width on Smaller Screens */
@@ -837,4 +841,5 @@ h1{
 
 
 }
-*
+ */
+

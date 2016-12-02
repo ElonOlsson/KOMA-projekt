@@ -15,9 +15,8 @@
 
   <body class="purplesky">
     <div class="backgroundMain">
-        <nav class="w3-sidenav" id="mySidenav">
 
-     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
@@ -42,8 +41,24 @@
           </div>
         </div>
       </nav>
-            </nav>
- <div class="container-fluid" ng-view></div>
+
+ <div class="container-fluid" ng-view></div>-->
+
+        <header class="w3-container" style="background-color: rgba(255, 255, 255, 0.7);">
+            <span style="font-size:30px;cursor:pointer" onclick="openNavigation()" id="openNav">&#9776;</span>
+            <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
+                <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:right";></a>
+        </header>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#!/favorites" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()">Favoriter</a>
+            <a href="#!/outfits" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()">Outfits</a>
+            <a href="#!/mood" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()">Inställningar</a>
+        </div>
+    <div id="main">
+
+  <div class="container-fluid" ng-view></div>
 
       <!-- library dependencies -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -53,7 +68,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.1.js"></script>
-
       <!-- end -->
 
       <!-- angular modules -->
