@@ -1,18 +1,12 @@
-<div class="rubrik_settings">
+<!--<div class="rubrik_settings">
 	<h1>Inställningar</h1>
-</div>
+</div>-->
 <!-- AngularJS -->
 <div ng-app="myApp.mood" ng-controller="FormCtrl">
 	<form name="moodForm" ng-submit="submitForm()">
 
-<<<<<<< HEAD
 		<iframe id="forecast_embed" type="text/html" frameborder="0" height="140px" width="100%"
-=======
-		<iframe id="forecast_embed" type="text/html" frameborder="0" height="130" width="100%"
->>>>>>> 0dad64d31f06a5d4430f3b67622047d37be6d4be
 				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping, Sverige&color=#00aaff&font=Arial&units=si"> </iframe>
-		<hr color= black noshade="0">
-
 
 		<div class="row text-center">
 			<div class="gender">
@@ -75,36 +69,3 @@
 		</div>
 	</form>
 </div>
-
-<!-- <div class="container">
-	<p>Det här är ditt humör!</p>
-	<form name="moodForm">
-		<div class="form-group" id="gender">
-			Kön:
-			<input type="radio" value="gender" value="male" /> Male 
-			<input type="radio" value="gender" value="female" /> Female <br/><br/>
-		</div>
-		<div class="form-group" id="currentMood">
-			Hur mår du idag? <br/>
-			<input type="radio" value="currentMood" value="happy"> Happy
-			<input type="radio" value="currentMood" value="neutral"> Neutral 
-			<input type="radio" value="currentMood" value="sad"> Sad <br/><br/>
-		</div>
-		<div class="form-group" id="chooseStyle">
-			Välj stil: <br/>
-			<select>
-				<option value="homeclothes">Mys</option>
-				<option value="party">Fest</option>
-				<option value="hiphop">Hiphop</option>
-			</select>
-			<br/><br/>
-		</div>
-		<div class="form-group">
-			Dagens prognos <br/>
-			<p>Massa prognoser</p>
-		</div>
-		<input type="submit" value="klar">
-	</form>
-</div>
- -->
-

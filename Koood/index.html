@@ -12,37 +12,12 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
 
+
   <body class="purplesky">
     <div class="backgroundMain">
+        <nav class="w3-sidenav" id="mySidenav">
 
-      <nav class="w3-sidenav" id="mySidenav">
-        <a href="javascript:void(0)"
-           onclick="w3_close()"
-           class="w3-closenav w3-medium"> &times;</a>
-        <div id="menuButton" class= "navbar-collapse collapse">
-          <ul class= "nav navbar-nav">
-            <li><a href="#!/favorites" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/heart_menu.png" height="25" width="25"/> Favoriter</a></li>
-            <li><a href="#!/outfits" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/floppy-diskette.png" height="25" width="25"/> Outfits</a></li>
-            <li><a href="#!/mood" data-toggle="collapse" data-target="#menuButton">
-              <img src="app/images/settings.png" height="25" width="25"/> Inställningar</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div id="main">
-
-        <header class="w3-container" id="myContainer">
-          <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
-          <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
-            <img class="logo" src="app/images/logo-black.png" alt="Klädkris"></a>
-          </button>
-        </header>
-      <!-- http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push_opacity
-      http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidenav_shift -->
-
-     <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
@@ -66,9 +41,9 @@
             </ul>
           </div>
         </div>
-      </nav> -->
-
-      <div class="container-fluid" ng-view></div>
+      </nav>
+            </nav>
+ <div class="container-fluid" ng-view></div>
 
       <!-- library dependencies -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -86,12 +61,9 @@
       <script src="app/home/home.js"></script>
       <script src="app/mood/mood.js"></script>
       <script src="app/basic/basic.js"></script>
-      <script src="app/start/start.js"></script>
       <script src="app/outfits/outfits.js"></script>
       <script src="app/favorites/favorites.js"></script>
-
       <!-- end -->
-      </div>
     </div>
   </body>
 </html>
