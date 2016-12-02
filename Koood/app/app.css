@@ -214,7 +214,7 @@ p{
     animation-name: zoom;
     animation-duration: 0.2s;
 }
->>>>>>> 33ef8615ab5f0444dcc685de91bdd52d88a97874
+
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -507,6 +507,13 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
     position: absolute;
     top: -5%;
     transform: translate(50%, 50%);
+}
+
+.rubrik_outfit{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
+    top: 6%;
+    transform: translate(210%, -70%);
 }
 
 h1{
@@ -899,4 +906,5 @@ h1{
 
 
 }
-*
+ */
+
