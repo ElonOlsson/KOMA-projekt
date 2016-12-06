@@ -156,6 +156,7 @@ p{
 /*-------------------------------------------------------------------------------------------------*/
 
 /* Style the Image Used to Trigger the Modal */
+
 /*
 #myImg{
     border-radius: 5px;
@@ -219,6 +220,7 @@ p{
 }
 
 
+>>>>>>> 40f29cc092cbdc97d8b2c341f3ede70880d71813
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
@@ -309,7 +311,7 @@ textarea{
 }
 
 div.outfitCarousel {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     margin: auto;
     display: table;
 }
@@ -472,7 +474,7 @@ div.outfitCarousel {
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(85%, -70%);
+    transform: translate(55%, -70%);
     padding-top: 10px;
 }
 
@@ -564,6 +566,8 @@ h1{
     transition: 0.3s;
 }
 
+#myImg:hover {opacity: 0.7;}
+
 
 /* The Modal (background) */
 .modal {
@@ -582,17 +586,18 @@ h1{
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 100%;
     display: block;
-    width: 100%;
-    max-width: 200px;
-    position: inherit;
-    top:0;
+    width: 80%;
+    max-width: 700px;
+    position: absolute;
+    top: 0;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
     padding: 0;
     border: 1px solid #888;
+    overflow: auto;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-animation-name: animatetop;
@@ -601,8 +606,9 @@ h1{
 }
 
 
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-.caption {
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -613,15 +619,34 @@ h1{
     height: 150px;
 }
 
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption
+{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
+}
 
 /* The Close Button */
 .close {
     position: absolute;
     margin: auto;
-    top: 400px;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: 300px;
+    left: 0;
     color: #5c5c5c;
     font-size: 20px;
     font-weight: bold;
@@ -629,7 +654,6 @@ h1{
     border-radius: 30px;
     border: 1px;
     display: inline-block;
-    line-height: 0px;
     padding: 11px 3px;
 }
 
@@ -640,13 +664,13 @@ h1{
     opacity: 0.3;
 }
 
-/* Add Animation - Zoom in the Modal */
+/*!* Add Animation - Zoom in the Modal *!
 .modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.2s;
-}
+}*/
 
 .modal-header {
     padding: 2px 16px;
@@ -654,16 +678,13 @@ h1{
     color: white;
 }
 
-
 /* Modal Body */
-.modal-body
-{
+.modal-body {
     padding: 2px 16px;
 }
 
 /* Modal Footer */
-.modal-footer
-{
+.modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
@@ -698,38 +719,9 @@ h1{
 }
 
 /*-------------------------------------------------------------------------------------------------*/
-/* image
-/*-------------------------------------------------------------------------------------------------*/
-
-/* Style the Image Used to Trigger the Modal */
-/*
-
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-/*
-
-/* Add Animation - Zoom in the Modal */
-/*
-
-
-
-/* The Close Button */
-/*
-
-
-
-/* 100% Image Width on Smaller Screens *//*
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-*/
-
-/*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
+
 
 /*
 
@@ -848,4 +840,5 @@ h1{
 
 }
  */
+
 
