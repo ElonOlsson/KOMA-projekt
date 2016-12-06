@@ -61,10 +61,15 @@
     height: 60px;
 }
 
-.w3-opennav{
-    float: right;
-    margin-top: 10px;
+#myContainer {
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
+#mySidenav {
+    display:none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .purplesky::after {
     content: "";
     background-image: url('images/bakgrund.jpg');
@@ -122,8 +127,8 @@ p{
 .logo {
   height: 40px;
   width: 65px;
-
     margin-top: 10px;
+    float: left;
 }
 
 .navbar {
@@ -138,6 +143,79 @@ p{
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
     padding: 0 0 0 30px;
     font-size: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* popup stylesheet */
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------*/
+/* image
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Style the Image Used to Trigger the Modal */
+
+/*
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+/*
+.modal {
+    display: none; /* Hidden by default */
+/*    position: fixed; /* Stay in place */
+/*    z-index: 1; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+/*   left: 0;
+/*    top: 0;
+/*    width: 100%; /* Full width */
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0,0,0); /* Fallback color */
+ /*   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/*
+/*}
+
+/* Modal Content (Image) */
+/*
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/*
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+/*
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -229,7 +307,7 @@ textarea{
 }
 
 div.outfitCarousel {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     margin: auto;
     display: table;
 }
@@ -274,12 +352,6 @@ div.outfitCarousel {
     margin:auto;
 }
 
-#imgButtom {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
-
 .carousel-control {
     top: 50%;
     width: auto;
@@ -317,29 +389,43 @@ div.outfitCarousel {
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
+<<<<<<< HEAD
     transform: translate(50%, -70%);
+=======
+    transform: translate(20%, 50%);
+    padding-top: 10px;
+>>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
 }
 
-.rubrik_favorite{
+.rubrik_favorites{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, -70%);
+    transform: translate(20%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, -70%);
+    transform: translate(65%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_outfit{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(50%, -70%);
-    font-size: x-small;
+    transform: translate(55%, -70%);
+    padding-top: 10px;
+}
+
+.rubrik_saved > h1,
+.rubrik_favorite > h1,
+.rubrik_settings > h1,
+.rubrik_outfit > h1{
+    font-size: 26px;
 }
 
 h1{
@@ -374,8 +460,7 @@ h1{
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
-    padding: 15px;
-    padding-bottom: 5px;
+    padding: 15px 15px 5px 15px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
     opacity: 1;
 
@@ -492,7 +577,7 @@ h1{
     to {transform:scale(0)}
 }
 
-
+/* The Close Button */
 .close {
     position: absolute;
     margin: auto;
@@ -508,16 +593,60 @@ h1{
     border: 1px;
     display: inline-block;
     padding: 11px 3px;
+}
 
+<<<<<<< HEAD
 .close:hover,
 .close:focus
 {
+=======
+.close:hover, .close:focus{
+>>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
     color: #fffefd;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.3;
-
 }
+
+/*!* Add Animation - Zoom in the Modal *!
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}*/
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    /* animation-duration: 0.4s*/
+}
+
+<<<<<<< HEAD
+=======
+/* Modal Content
+.modal-content
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+}
+}*/
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
@@ -525,31 +654,17 @@ h1{
     }
 }
 
-.modal-header
-{
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
 }
 
-
-/* Modal Body */
-
-.modal-body
-{
-    padding: 2px 16px;
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
 }
 
-/* Modal Footer */
-
-.modal-footer
-{
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    /* animation-duration: 0.4s*/
-}
-
+>>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
