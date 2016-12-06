@@ -61,11 +61,6 @@
     height: 60px;
 }
 
-.w3-opennav{
-    float: right;
-    margin-top: 10px;
-}
-
 #myContainer {
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -453,28 +448,39 @@ div.outfitCarousel {
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, 50%);
+    transform: translate(20%, 50%);
+    padding-top: 10px;
 }
 
-.rubrik_favorite{
+.rubrik_favorites{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, 50%);
+    transform: translate(20%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, 50%);
+    transform: translate(65%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_outfit{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(210%, -70%);
+    transform: translate(85%, -70%);
+    padding-top: 10px;
+}
+
+.rubrik_saved > h1,
+.rubrik_favorite > h1,
+.rubrik_settings > h1,
+.rubrik_outfit > h1{
+    font-size: 26px;
 }
 
 h1{
