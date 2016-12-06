@@ -15,21 +15,23 @@
 
   <body class="purplesky">
     <div class="backgroundMain">
-        <header class="w3-container" style="background-color: rgba(255, 255, 255, 0.7);">
+        <header class="w3-container" style="background-color: rgba(255, 255, 255, 0.7); position:"fixed">
             <span style="font-size:30px;cursor:pointer" onclick="openNavigation()" id="openNav">&#9776;</span>
             <a class=navbar-brand" href="#!/home" data-toggle="collapse" data-target="#menuButton">
                 <img class="logo" src="app/images/logo-black.png" alt="Klädkris" style="float:right";></a>
         </header>
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
             <a href="#!/favorites" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()"> <img src="../koood/app/images/heart_menu.png" width="25%"> Favoriter</a>
             <a href="#!/outfits" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()"><img src="../koood/app/images/floppy-diskette.png" width="25%"> Outfits</a>
             <a href="#!/mood" data-toggle="collapse" data-target="#menuButton" onclick="closeNav()"><img src="../koood/app/images/settings.png" width="25%"> Inställningar</a>
         </div>
+    </div>
+
     <div id="main">
 
-  <div class="container-fluid" ng-view></div>
+    <div class="container-fluid" ng-view></div>
 
       <!-- library dependencies -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
