@@ -153,6 +153,7 @@ p{
 /*-------------------------------------------------------------------------------------------------*/
 
 /* Style the Image Used to Trigger the Modal */
+
 /*
 #myImg{
     border-radius: 5px;
@@ -216,6 +217,7 @@ p{
 }
 
 
+>>>>>>> 40f29cc092cbdc97d8b2c341f3ede70880d71813
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
@@ -600,6 +602,8 @@ h1{
     transition: 0.3s;
 }
 
+#myImg:hover {opacity: 0.7;}
+
 
 /* The Modal (background) */
 .modal {
@@ -618,28 +622,29 @@ h1{
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 100%;
     display: block;
-    width: 100%;
-    max-width: 200px;
-    position: inherit;
-    top:0;
+    width: 80%;
+    max-width: 700px;
+    position: absolute;
+    top: 0;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
     padding: 0;
     border: 1px solid #888;
+    overflow: auto;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-
 }
 
 
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-.caption {
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -650,16 +655,34 @@ h1{
     height: 150px;
 }
 
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption
+{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
 
-/* The Close Button */
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
+}
+
 
 .close {
     position: absolute;
     margin: auto;
-    top: 400px;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: 300px;
+    left: 0;
     color: #5c5c5c;
     font-size: 20px;
     font-weight: bold;
@@ -667,8 +690,9 @@ h1{
     border-radius: 30px;
     border: 1px;
     display: inline-block;
-    line-height: 0px;
     padding: 11px 3px;
+
+
 
 .close:hover,
 .close:focus
@@ -677,32 +701,13 @@ h1{
     text-decoration: none;
     cursor: pointer;
     opacity: 0.3;
+
 }
-
-
-/*
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}*/
-
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption
-{
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.2s;
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 .modal-header
@@ -730,65 +735,16 @@ h1{
     /* animation-duration: 0.4s*/
 }
 
-/* Modal Content
-.modal-content
-{
-
-}*/
 
 
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(0)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(0)}
-}
 
 
-/*-------------------------------------------------------------------------------------------------*/
-/* image
-/*-------------------------------------------------------------------------------------------------*/
-
-/* Style the Image Used to Trigger the Modal */
-/*
-
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-/*
-
-/* Add Animation - Zoom in the Modal */
-/*
-
-
-
-/* The Close Button */
-/*
-
-
-
-/* 100% Image Width on Smaller Screens *//*
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-*/
 
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
+
 
 /*
 
@@ -907,4 +863,5 @@ h1{
 
 }
  */
+
 
