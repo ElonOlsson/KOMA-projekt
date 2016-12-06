@@ -5,7 +5,7 @@
 }
 
 .backgroundMain{
-    padding-bottom: 50px;
+    padding-bottom:0px;
 }
 
 .sidenav {
@@ -389,12 +389,8 @@ div.outfitCarousel {
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-<<<<<<< HEAD
-    transform: translate(50%, -70%);
-=======
     transform: translate(20%, 50%);
     padding-top: 10px;
->>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
 }
 
 .rubrik_favorites{
@@ -595,13 +591,8 @@ h1{
     padding: 11px 3px;
 }
 
-<<<<<<< HEAD
-.close:hover,
-.close:focus
-{
-=======
+
 .close:hover, .close:focus{
->>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
     color: #fffefd;
     text-decoration: none;
     cursor: pointer;
@@ -635,8 +626,6 @@ h1{
     /* animation-duration: 0.4s*/
 }
 
-<<<<<<< HEAD
-=======
 /* Modal Content
 .modal-content
 {
@@ -648,23 +637,12 @@ h1{
 }*/
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/*@media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
-}
+}*/
 
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(0)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(0)}
-}
-
->>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
