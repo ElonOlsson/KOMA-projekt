@@ -1,6 +1,51 @@
 /* app css stylesheet */
-#mySidenav{
+.purplesky{
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 .container-fluid{
@@ -108,6 +153,71 @@ p{
 /*-------------------------------------------------------------------------------------------------*/
 
 /* Style the Image Used to Trigger the Modal */
+
+/*
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+/*
+.modal {
+    display: none; /* Hidden by default */
+/*    position: fixed; /* Stay in place */
+/*    z-index: 1; /* Sit on top */
+/*    padding-top: 100px; /* Location of the box */
+/*   left: 0;
+/*    top: 0;
+/*    width: 100%; /* Full width */
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0,0,0); /* Fallback color */
+ /*   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/*
+/*}
+
+/* Modal Content (Image) */
+/*
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/*
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+/*
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+
+>>>>>>> 40f29cc092cbdc97d8b2c341f3ede70880d71813
 
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
@@ -380,29 +490,36 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 /* Favorites & Outfits css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
 
-.rubrik_saved{
+.rubrik_saved {
     font-family: "Corbel", Times, serif;
     position: absolute;
-    top: 6%;
-    transform: translate(90%, -70%);
+    top: -5%;
+    transform: translate(50%, 50%);
 }
 
 .rubrik_favorite{
     font-family: "Corbel", Times, serif;
     position: absolute;
-    top: 6%;
-    transform: translate(200%, -70%);
+    top: -5%;
+    transform: translate(50%, 50%);
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
+    top: -5%;
+    transform: translate(50%, 50%);
+}
+
+.rubrik_outfit{
+    font-family: "Corbel", Times, serif;
+    position: absolute;
     top: 6%;
-    transform: translate(150%, -70%);
+    transform: translate(210%, -70%);
 }
 
 h1{
-    font-size: medium;
+    font-size: small;
     text-align: center;
 }
 
@@ -627,4 +744,124 @@ h1{
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
+
+
+/*
+
+#myModal {
+    display: none; /* Hidden by default */
+/*    position: fixed; /* Stay in place */
+/*    z-index: 1; /* Sit on top */
+/*    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+/*    height: 100%; /* Full height */
+/*    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0, 0, 0); /* Fallback color */
+/*    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity*/
+/*    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+/*}
+
+
+/* Modal Content/Box */
+/*.modal-content {
+    z-index: auto;
+    left: 0px;
+    top: 200px;
+    float: inherit;
+    padding: 20px; /* 15% from the top and centered*/
+/*    background-color: #fefefe;
+    margin: 100% auto;
+    border: 1px solid #800000;
+    width: 100%; /* Could be more or less, depending on screen size */
+/*    -webkit-transform: translate(-50%, -50%);
+
+    /* 15% from the top and centered*/
+/*}
+/*
+
+#myBtn {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+/* Modal Header */
+
+/*.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+/*
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Footer */
+/*
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+/*.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+/*@-webkit-keyframes animatetop {
+    from {
+        top: -500px;
+        opacity: 0}
+
+    to {
+        top: 0;
+        opacity: 1}
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+
+
+}
+ */
+
 
