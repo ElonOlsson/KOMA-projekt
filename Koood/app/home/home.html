@@ -15,19 +15,20 @@
 			<div ng-controller="CarouselCtrl" class="slides_control_top">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_top in items_top" index="$index">
+						<img class="heart" src="app/images/heart_blank.png" style="height: 20px;" />
 						<img id="imgTopCarousel" ng-src="{{item_top.imgSrc}}" >
 					</uib-slide>
 				</uib-carousel>
 			</div>
 		</div>
 
-		<div class="bottomCarousel ng-app="myApp.home.carousel">
+		<div class="bottomCarousel" ng-app="myApp.home.carousel">
 			<!-- AngularJS - karousell -->
 			<div ng-controller="CarouselCtrl" class="slides_control_bottom">
 				<uib-carousel interval="myInterval" active="activeSlide">
 					<uib-slide ng-repeat="item_bottom in items_bottom" index="$index">
-							<!--<img src="app/images/heart-gray.png" id="imgHeart">-->
-							<img id="imgBottomCarousel" ng-src="{{item_bottom.imgSrc}}" id="imgButtom">
+						<img class="heart" src="app/images/heart_blank.png" style="height: 20px;" />
+						<img id="imgBottomCarousel" ng-src="{{item_bottom.imgSrc}}" id="imgButtom">
 					</uib-slide>
 				</uib-carousel>
 			</div>

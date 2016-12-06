@@ -1,3 +1,3 @@
-[{ "gender":"male", "heart":true, "imgSrc":"app/images/clothes/pants.png", "imgHeart":"app/images/heart-gray.png" },
-  { "gender":"female", "heart":false, "imgSrc":"app/images/clothes/skirt.png", "imgHeart":"app/images/heart-gray.png" },
-  { "gender":"male", "heart":false, "imgSrc":"app/images/clothes/shorts.png", "imgHeart":"app/images/heart-gray.png" }]
+[{ "gender":"male", "heart":true, "imgSrc":"app/images/clothes/pants.png", "imgHeart":"app/images/heart-gray.png", "imgSrcHeart":"app/images/heart_blank.png" },
+  { "gender":"female", "heart":false, "imgSrc":"app/images/clothes/skirt.png", "imgHeart":"app/images/heart-gray.png", "imgSrcHeart":"app/images/heart_blank.png" },
+  { "gender":"male", "heart":false, "imgSrc":"app/images/clothes/shorts.png", "imgHeart":"app/images/heart-gray.png", "imgSrcHeart":"app/images/heart_blank.png" }]

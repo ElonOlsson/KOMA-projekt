@@ -339,6 +339,7 @@ div.outfitCarousel {
     opacity: 0.8;
     height: 100%;
     width: 100%;
+    position: relative;
 
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -363,6 +364,10 @@ div.outfitCarousel {
     position:absolute;
     left:45%;
     top:99%;
+}
+
+.heart:hover {
+    content: url('images/heart.png');
 }
 
 @media (max-width: 768px) {
