@@ -596,6 +596,25 @@ h1{
     padding: 11px 3px;
 }
 
+.button{
+    background-image: url('images/bakgrund.jpg');
+    background-position: center center; /*  bakgrundens position */
+    background-size: cover;
+    opacity: 0.8;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Corbel", Times, serif;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 
 .close:hover, .close:focus{
     color: #fffefd;
