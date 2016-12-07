@@ -52,7 +52,6 @@ function changeFemale(elementFemale) {
 	elementFemale.bln = !elementFemale.bln;  /* assigns opposite boolean value always */
 }
 
-
 function home() {
 	window.location = "#!/home";
 };

@@ -1,14 +1,17 @@
 /* app css stylesheet */
 #forecast_embed{
-    border-bottom: 1px black solid;
+    border-bottom: 2px solid #404040;
+    font-family: "Corbel", Times, serif;
 }
 .purplesky{
-    font-family: "Lato", sans-serif;
+    font-family: "Corbel", Times, serif;
     transition: background-color .5s;
 }
 
 .backgroundMain{
     padding-bottom:0px;
+    font-family: "Corbel", Times, serif;
+
 }
 
 .sidenav {
@@ -28,6 +31,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
+    font-family: "Corbel", Times, serif;
     color: black;
     display: block;
     transition: 0.3s
@@ -42,6 +46,7 @@
     top: 0;
     right: 25px;
     font-size: 36px;
+    font-family: "Corbel", Times, serif;
     margin-left: 50px;
 }
 
@@ -52,7 +57,7 @@
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: 18px; font-family: "Corbel", Times, serif;}
 }
 
 .container-fluid{
@@ -94,6 +99,8 @@
 
 p{
     font-size: 20px;
+    color: black;
+    font-family: "Corbel", Times, serif;
     margin: -10px;
 }
 
@@ -145,6 +152,7 @@ p{
     z-index: 123; /*detta avgör vad vilket som ligger på vad. Så länge z-index här är > z-index på vanliga sidan, så fungerar menyknappen*/
     padding: 0 0 0 30px;
     font-size: 10px;
+    font-family: "Corbel", Times, serif;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -291,7 +299,8 @@ textarea{
 
 .toggle {
     padding: 10px 55px;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: "Corbel", Times, serif;
     color: black;
     border: none;
     background: rgba(0,0,0,0);
@@ -391,39 +400,41 @@ div.outfitCarousel {
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(20%, 50%);
-    padding-top: 10px;
+    transform: translate(40%, 50%);
+    padding-top: 20px;
 }
 
-.rubrik_favorites{
+.rubrik_favorite{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(20%, 50%);
-    padding-top: 10px;
+    transform: translate(130%, 50%);
+    padding-top: 20px;
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(65%, 50%);
-    padding-top: 10px;
+    transform: translate(85%, 50%);
+    padding-top: 20px;
 }
 
 .rubrik_outfit{
     font-family: "Corbel", Times, serif;
     position: absolute;
-    top: 6%;
-    transform: translate(55%, -70%);
-    padding-top: 10px;
+    top: -5%;
+    transform: translate(75%, 50%);
+    padding-top: 20px;
 }
 
 .rubrik_saved > h1,
 .rubrik_favorite > h1,
 .rubrik_settings > h1,
 .rubrik_outfit > h1{
-    font-size: 26px;
+    font-family: "Corbel", Times, serif;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 h1{
