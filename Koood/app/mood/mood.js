@@ -54,9 +54,12 @@ function changeFemale(elementFemale) {
 
 
 function home() {
-        window.location = "#!/home";
+	window.location = "#!/home";
 };
 
+function hide(){
+	document.getElementById("chooseStyle").classList.remove("in");
+};
 
 /* **************** TEST **************** */
 

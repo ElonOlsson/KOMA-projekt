@@ -1,4 +1,7 @@
 /* app css stylesheet */
+#forecast_embed{
+    border-bottom: 1px black solid;
+}
 .purplesky{
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
@@ -66,7 +69,6 @@
 }
 
 #mySidenav {
-    display:none;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
