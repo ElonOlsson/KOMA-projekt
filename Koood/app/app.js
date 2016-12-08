@@ -18,17 +18,18 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
   $routeProvider.otherwise({redirectTo: '/mood'}); //Vår startsida, vilket kommer vara den sidan man kommer till om man trycker på loggan.
 }]);
 
+
 function openNavigation() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
   document.getElementById("openNav").style.display = 'none';
-
+  document.getElementsByClassName("rubrik_settings").classList.remove("h1");
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
   document.getElementById("openNav").style.display = "inline-block";
 }

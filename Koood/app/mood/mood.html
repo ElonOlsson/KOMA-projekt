@@ -7,20 +7,20 @@
 <!-- AngularJS -->
 <div ng-app="myApp.mood" ng-controller="FormCtrl">
 	<form name="moodForm" ng-submit="submitForm()">
-
-		<iframe id="forecast_embed" type="text/html" frameborder="0" height="140px" width="100%"
-				src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping, Sverige&color=#00aaff&font=Arial&units=si"> </iframe>
-
-
+		<div class="weather-forecast col-xs-12">
+			<iframe id="forecast_embed" type="text/html" frameborder="0" height="140px" width="100%"
+					src="http://forecast.io/embed/#lat=58.6&lon=16.1833333&name=Norrköping, Sverige&color=#00aaff&font=Corbel&units=si">
+			</iframe>
+		</div>
 		<div class="row text-center">
 			<div class="gender">
 			<p>Kön?</p>
 				<label>
-					<img id="mood" src="../Koood/app/images/Male.png" height="55" width="50" id="changer" onclick="changeMale(this)"/>
+					<img class="mood" src="../Koood/app/images/Male.png" height="55" width="50" id="changer" onclick="changeMale(this)"/>
 					<input type="radio" ng-model="data.gender" value="male" />
 				</label>
 				 <label>
-					 <img id="mood" src="../Koood/app/images/Female.png" height="50" width="50" id="changer" onclick="changeFemale(this)"/>
+					 <img class="mood" src="../Koood/app/images/Female.png" height="50" width="50" id="changer" onclick="changeFemale(this)"/>
 					<input type="radio" ng-model="data.gender" value="female" />
 				 </label>
 			</div>
@@ -29,15 +29,15 @@
 			<div class="humor">
 				<p>Hur mår du idag?</p>
 				<label>
-					<img id="mood" src="../Koood/app/images/smile.png" height="40" width="40" id="changer" onclick="changeHappy(this)" />
+					<img class="mood" src="../Koood/app/images/smile.png" height="40" width="40" id="changer" onclick="changeHappy(this)" />
 					<input type="radio" ng-model="data.currentMood" value="happy">
 				</label>
 				<label>
-					<img id="mood" src="../Koood/app/images/straight.png" height="40" width="40" id="changer" onclick="changeNeutral(this)"/>
+					<img class="mood" src="../Koood/app/images/straight.png" height="40" width="40" id="changer" onclick="changeNeutral(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="neutral">
 				</label>
 				<label>
-					<img id="mood" src="../Koood/app/images/sad_new.png" height="40" width="40" id="changer" onclick="changeSad(this)"/>
+					<img class="mood" src="../Koood/app/images/sad_new.png" height="40" width="40" id="changer" onclick="changeSad(this)"/>
 					<input type="radio" ng-model="data.currentMood" value="sad">
 				</label>
 			</div>
@@ -56,20 +56,20 @@
 		<div id="chooseStyle" class="row text-center navbar-collapse collapse">
 			<label class="styleSelectionButton" data-parent="#chooseStyle" data-toggle="collapse" data-target="#chooseStryle">
 				<!-- skapa classen styleSelectionButton i css. -->
-				<input type="radio" ng-model="data.style" value="Vardag" >Vardag</input>	<!-- Får det inte att funka att ha det som en knapp. -->
+				<input type="radio" ng-model="data.style" value="Vardag" onClick="hide()">Vardag</input>	<!-- Får det inte att funka att ha det som en knapp. -->
 			</label>																<!-- Det kopplar då inte till form:et --> <!--ng-change="newValue()"-->
 			<br/>
 			<label class="styleSelectionButton">
-				<input type="radio" ng-model="data.style" value="Fancy">Fest</input>
+				<input type="radio" ng-model="data.style" value="Fancy" onClick="hide()">Fest</input>
 			</label>
 			<br/>
 			<label class="styleSelectionButton">
-				<input type="radio" ng-model="data.style" value="Mys" >Mys</input>
+				<input type="radio" ng-model="data.style" value="Mys"  onClick="hide()">Mys</input>
 			</label>
 		</div>
 		<br/><br/>
 		<div class="row text-center">
-		<input type="submit" ngClick="submitForm" onClick="home()">
+		<input type="submit" ngClick="submitForm" value="Ställ in" onClick="home()">
 		</div>
 	</form>
 </div>
