@@ -52,11 +52,10 @@ function changeFemale(elementFemale) {
 	elementFemale.bln = !elementFemale.bln;  /* assigns opposite boolean value always */
 }
 
-
 function home() {
-        window.location = "#!/home";
+	window.location = "#!/home";
 };
 
-
-/* **************** TEST **************** */
-
+function hide(){
+	document.getElementById("chooseStyle").classList.remove("in");
+};
