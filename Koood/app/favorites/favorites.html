@@ -4,42 +4,72 @@
 <div id="wrapper">
     <div id="columns">
         <div class="pin">
-            <!-- Trigger the Modal -->
-            <img id="myImg" src="../koood/app/images/clothes/t-shirt.png" alt="outfitnr1" width="100%" >
 
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="../koood/app/images/clothes/top.png" alt="outfitnr1" width="100%" >
             <!-- The Modal -->
             <div id="myModal" class="modal">
+                <span class="close"> &times; </span>
 
-                <span class="close"> X </span>
-                <!-- The Close Button -->
-                <!-- Modal Content (The Image) -->
+
                 <img class="modal-content" id="img01">
+                    <div class="caption" style="color:white;">En färgglad enkel topp som passar bra med en svart underdel.</div>
+                </img>
 
                 <!-- Modal Caption (Image Text) -->
-                <div class="caption"></div>
             </div>
+        </div>
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/spet.jpeg" alt="Outfit" width="100%">
         </div>
 
         <div class="pin">
             <!-- Trigger the Modal -->
-            <img src="../koood/app/images/clothes/skirt.png" alt="Outfit" width="100%">
+            <img src="../koood/app/images/clothes/hm.jpeg" alt="Outfit" width="100%">
         </div>
 
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/skrr_white.png" alt="Outfit" width="100%">
+        </div>
+
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/top.jpeg" alt="Outfit" width="100%">
+        </div>
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/fave.jpeg" alt="Outfit" width="100%">
+        </div>
+
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/favetop.jpeg" alt="Outfit" width="100%">
+        </div>
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/favewhite.jpeg" alt="Outfit" width="100%">
+        </div>
+
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/sistaplagg.jpeg" alt="Outfit" width="100%">
+        </div>
+
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/jeans.jpeg" alt="Outfit" width="100%">
+        </div>
+        <div class="pin">
+            <!-- Trigger the Modal -->
+            <img src="../koood/app/images/clothes/hmm.jpeg" alt="Outfit" width="100%">
+        </div>
         <div class="pin">
             <!-- Trigger the Modal -->
             <img src="../koood/app/images/clothes/shorts.png" alt="Outfit" width="100%">
         </div>
-
-        <div class="pin">
-            <!-- Trigger the Modal -->
-            <img src="../koood/app/images/clothes/dress.jpeg" alt="Outfit" width="100%">
-        </div>
-
-        <div class="pin">
-            <!-- Trigger the Modal -->
-            <img src="../koood/app/images/clothes/black.jpeg" alt="Outfit" width="100%">
-        </div>
-        </div>
+    </div>
 </div>
 
 <script>
@@ -63,5 +93,11 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
 </script>

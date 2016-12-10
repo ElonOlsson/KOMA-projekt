@@ -24,7 +24,6 @@ function openNavigation() {
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
   document.getElementById("openNav").style.display = 'none';
-  document.getElementsByClassName("rubrik_settings").classList.remove("h1");
 }
 
 function closeNav() {

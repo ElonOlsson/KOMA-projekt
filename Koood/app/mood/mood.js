@@ -59,6 +59,3 @@ function home() {
 function hide(){
 	document.getElementById("chooseStyle").classList.remove("in");
 };
-
-/* **************** TEST **************** */
-
