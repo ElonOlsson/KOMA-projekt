@@ -61,10 +61,15 @@
     height: 60px;
 }
 
-.w3-opennav{
-    float: right;
-    margin-top: 10px;
+#myContainer {
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
+#mySidenav {
+    display:none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .purplesky::after {
     content: "";
     background-image: url('images/bakgrund.jpg');
@@ -122,8 +127,8 @@ p{
 .logo {
   height: 40px;
   width: 65px;
-
     margin-top: 10px;
+    float: left;
 }
 
 .navbar {
@@ -140,12 +145,9 @@ p{
     font-size: 10px;
 }
 
-
-
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
-
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -153,6 +155,7 @@ p{
 /*-------------------------------------------------------------------------------------------------*/
 
 /* Style the Image Used to Trigger the Modal */
+
 /*
 #myImg{
     border-radius: 5px;
@@ -215,8 +218,6 @@ p{
     animation-duration: 0.2s;
 }
 
-
-
 /*-------------------------------------------------------------------------------------------------*/
 /* mood css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
@@ -270,13 +271,6 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-   /* border-radius: 6px;
-    padding: 10px 55px;
-    font-size: 15px;
-    color: black;
-    background: rgba(0,0,0,0);
-    border: solid 5px black; */
 }
 textarea{
 // Lägg till här
@@ -313,7 +307,7 @@ textarea{
 }
 
 div.outfitCarousel {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     margin: auto;
     display: table;
 }
@@ -358,12 +352,6 @@ div.outfitCarousel {
     margin:auto;
 }
 
-#imgButtom {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
-
 .carousel-control {
     top: 50%;
     width: auto;
@@ -374,14 +362,14 @@ div.outfitCarousel {
 .outfit{
     position:absolute;
     left:45%;
-    top:98%;
+    top:99%;
 }
 
 @media (max-width: 768px) {
     .outfit {
         position:absolute;
         left:30%;
-        top:88%;
+        top:90%;
     }
 }
 
@@ -450,40 +438,6 @@ div.outfitCarousel {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* Specifikationer fÃ¶r att skapa en animation fÃ¶r bakgrundsbilderna*/
-/* https://css-tricks.com/almanac/properties/a/animation/
-   https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-/*.background{
-
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 12s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: step-start;
-
-    animation-name: example;
-    animation-duration: 14s; /* Animationens tidsfÃ¶rlopp */
-    /*animation-iteration-count: infinite; /* Animationen hÃ¥ller pÃ¥ fÃ¶r evigt  */
-   /* animation-timing-function: ease-in; /* Animationen acceleration, utan Ã¶vergÃ¥ngar */
-/* } */
-
-/* https://css-tricks.com/almanac/properties/a/animation/
-https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-/*@-webkit-keyframes example {
-    0%   {background-image: url('images/background/bakgrund1.jpg');}
-    33%  {background-image: url('images/background/bakgrund2.jpg');}
-    66%  {background-image: url('images/background/bakgrund1.jpg');}
-    100% {background-image: url('images/background/bakgrund2.jpg');}
-}*/
-
-/* https://css-tricks.com/almanac/properties/a/animation/
-https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
-/*@keyframes example {
-    0%   {background-image: url('images/background/bakgrund1.jpg');}
-    33%  {background-image: url('images/background/bakgrund2.jpg');}
-    66%  {background-image: url('images/background/bakgrund1.jpg');}
-    100% {background-image: url('images/background/bakgrund2.jpg');}
-}*/
-
 /*-------------------------------------------------------------------------------------------------*/
 /* Favorites & Outfits css stylesheet */
 /*-------------------------------------------------------------------------------------------------*/
@@ -491,33 +445,49 @@ https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
 .rubrik_saved {
     font-family: "Corbel", Times, serif;
     position: absolute;
+<<<<<<< HEAD
     top: 6%;
     transform: translate(50%, 50%);
+=======
+    top: -5%;
+    transform: translate(20%, 50%);
+    padding-top: 10px;
+>>>>>>> 7ec88a91af6d499c0095225104dd62c62c4f65dd
 }
 
-.rubrik_favorite{
+.rubrik_favorites{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, 50%);
+    transform: translate(20%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_settings{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: -5%;
-    transform: translate(50%, 50%);
+    transform: translate(65%, 50%);
+    padding-top: 10px;
 }
 
 .rubrik_outfit{
     font-family: "Corbel", Times, serif;
     position: absolute;
     top: 6%;
-    transform: translate(210%, -70%);
+    transform: translate(55%, -70%);
+    padding-top: 10px;
+}
+
+.rubrik_saved > h1,
+.rubrik_favorite > h1,
+.rubrik_settings > h1,
+.rubrik_outfit > h1{
+    font-size: 26px;
 }
 
 h1{
-    font-size: small;
+    font-size: x-small;
     text-align: center;
 }
 
@@ -548,8 +518,7 @@ h1{
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
-    padding: 15px;
-    padding-bottom: 5px;
+    padding: 15px 15px 5px 15px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
     opacity: 1;
 
@@ -587,8 +556,6 @@ h1{
     opacity: 0.4;
 }
 
-/* **************** TEST **************** */
-
 /*-------------------------------------------------------------------------------------------------*/
 /* image
 /*-------------------------------------------------------------------------------------------------*/
@@ -599,6 +566,8 @@ h1{
     cursor: pointer;
     transition: 0.3s;
 }
+
+#myImg:hover {opacity: 0.7;}
 
 
 /* The Modal (background) */
@@ -618,28 +587,27 @@ h1{
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 100%;
     display: block;
-    width: 100%;
-    max-width: 200px;
-    position: inherit;
-    top:0;
+    width: 80%;
+    max-width: 700px;
+    position: absolute;
+    top: 0;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
     padding: 0;
     border: 1px solid #888;
+    overflow: auto;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-
 }
 
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-.caption {
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -650,52 +618,6 @@ h1{
     height: 150px;
 }
 
-
-/* The Close Button */
-
-.close {
-    position: absolute;
-    margin: auto;
-    top: 400px;
-    right: 0;
-    bottom: 0;
-    left: 300px;
-    color: #5c5c5c;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-    border-radius: 30px;
-    border: 1px;
-    display: inline-block;
-    line-height: 0px;
-    padding: 11px 3px;
-
-.close:hover,
-.close:focus
-{
-    color: #fffefd;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0.3;
-}
-
-
-/*
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}*/
-
-
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption
 {
@@ -705,25 +627,63 @@ h1{
     animation-duration: 0.2s;
 }
 
-.modal-header
-{
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(0)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(0)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #5c5c5c;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 30px;
+    border: 1px;
+    display: inline-block;
+    padding: 11px 3px;
+}
+
+.close:hover, .close:focus{
+    color: #fffefd;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+/*!* Add Animation - Zoom in the Modal *!
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}*/
+
+.modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
-
 /* Modal Body */
-
-.modal-body
-{
+.modal-body {
     padding: 2px 16px;
 }
 
 /* Modal Footer */
-
-.modal-footer
-{
+.modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
@@ -733,10 +693,12 @@ h1{
 /* Modal Content
 .modal-content
 {
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+}
 }*/
-
-
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
@@ -755,40 +717,10 @@ h1{
     to {transform:scale(0)}
 }
 
-
-/*-------------------------------------------------------------------------------------------------*/
-/* image
-/*-------------------------------------------------------------------------------------------------*/
-
-/* Style the Image Used to Trigger the Modal */
-/*
-
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-/*
-
-/* Add Animation - Zoom in the Modal */
-/*
-
-
-
-/* The Close Button */
-/*
-
-
-
-/* 100% Image Width on Smaller Screens *//*
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-*/
-
 /*-------------------------------------------------------------------------------------------------*/
 /* popup stylesheet
 /*-------------------------------------------------------------------------------------------------*/
+
 
 /*
 
@@ -907,4 +839,5 @@ h1{
 
 }
  */
+
 
